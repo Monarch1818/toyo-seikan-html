@@ -114,6 +114,7 @@ height: 30px;
 
 .course-content {
     margin-top: 30px;
+        padding: 0 70px;
 }
 
 .course-tab .nav-link{
@@ -215,6 +216,185 @@ background-color: #23527C !important;
     border-radius: 6px;
     color: #464646;
 }
+
+.bg-roadmap {
+background-image: url(../assets/images/bg-roadmap.png);
+background-size: cover;
+}
+
+#tab-section2 path{
+filter: drop-shadow(0px 0px 2px rgba(66, 165, 245, 100%))  !important;
+}
+
+.roadmap .title {
+margin-bottom: 30px;
+    border-bottom: 3px solid #38BAD2;
+    display: inline-block;
+    padding-bottom: 0px;
+}
+
+.roadmap span {
+        font-size: 54px;
+}
+
+.roadmap .title2 {
+    color: #38BAD2;
+}
+
+.roadmap .nav {
+    width: 100%;
+}
+
+.roadmap .road{
+display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.roadmap .road .number{
+background-color: #ffffff;
+    text-align: center;
+    font-size: 46px;
+
+}
+
+.roadmap .nav-pills .nav-link.active {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #a74141;
+    background-color: #7d2626;
+}
+
+.roadmap .nav-pills .nav-link {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    column-gap: 16px;
+    padding: 0;
+}
+
+
+.roadmap .nav-link .wrap{
+ display: flex;
+    align-items: center;
+    background-color: #F3922C;
+    border-radius: 88px;
+    padding: 16px 24px 16px 42px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.roadmap .couurse-name-rd{
+text-align: start;
+}
+
+.roadmap .couurse-name-rd p:first-child{
+color: #fff;
+}
+
+.roadmap .couurse-name-rd p:last-child{
+color: #000000;
+    font-size: 16px;
+}
+
+.roadmap .icon{
+    width: auto;
+    height: auto;
+    color: white;
+    font-size: 24px;
+    padding: 12px;
+    border: 1px solid #ffff;
+    border-radius: 50%;
+            margin: 0 0 0 30px;
+}
+
+.roadmap .road:nth-child(1) .wrap {
+    background-color: #F1AC20 !important;
+}
+
+
+.roadmap .road:nth-child(2) .wrap {
+    background-color: #EC7627 !important;
+}
+
+.roadmap .road:nth-child(3).wrap {
+    background-color: #D33E94 !important;
+}
+
+.roadmap .road:nth-child(4) .wrap {
+    background-color: #8761A1 !important
+}
+
+.roadmap .road:nth-child(5) .wrap  {
+    background-color: #3FC4DB  !important;  
+}
+
+.roadmap .road:nth-child(1) .number{
+    color: #F1AC20 !important;
+}
+
+
+.roadmap .road:nth-child(2) .number{
+    color: #EC7627 !important;
+}
+
+.roadmap .road:nth-child(3).number{
+    color: #D33E94 !important;
+}
+
+.roadmap .road:nth-child(4) .number{
+    color: #8761A1 !important
+}
+
+.roadmap .road:nth-child(5) .number {
+    color: #3FC4DB  !important;  
+}
+
+.roadmap .nav-pills .nav-link.active {
+        background-color: #ffffff !important;
+}
+
+.roadmap .nav-pills .nav-link.active .number{
+      border-left: 2px solid #38BAD2 !important;
+      padding-left: 4px !important;
+}
+
+.roadmap .page-link{
+    border-radius: 6px !important;
+    background-color: #A4A5A7;
+    color: #fff;
+        font-size: 20px;
+}
+
+.roadmap .pagination{
+justify-content: center;
+column-gap: 16px;
+margin-top: 26px;
+}
+
+.roadmap .page-item.active .page-link{ 
+background-color: #0B4BA1;
+color: #fff;
+}
+
+.roadmap .page-item:first-child .page-link {
+    background-color: #4793FA !important;
+    color: #fff !important;
+}
+
+.roadmap .page-item:last-child .page-link {
+    background-color: #4793FA !important;
+    color: #fff !important;
+}
+
+
+
+
+
+
 
 
 
