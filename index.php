@@ -1,8 +1,10 @@
 <?php include 'includes/header.php'; ?>
-
+<head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 <main class="container mt-5">
     <div class="p-5 mb-4 bg-light rounded-3">
-        <h1>ยินดีต้อนรับสู่หน้าแ รก</h1>
+        <h1>ยินดีต้อนรับสู่หน้าแรก</h1>
         <p>นี่คือเนื้อหาเฉพาะ ของหน้านี้เท่านั้น</p>
         <button class="btn bt n-primary">เริ่มต้นใช้งาน</button>
     </div>
