@@ -7,7 +7,6 @@
 
     .container-result {
 
-
         .card-header {
             background-color: #0D2EA0;
             color: white;
@@ -162,10 +161,8 @@
         </div>
 
         <button class="btn btn-primary btn-test d-block mx-auto"
-            onclick="window.location.href='course-main.php'">Back</button>
+            onclick="window.location.href='course-detail.php'">Back</button>
     </div>
-
-
 
 </main>
 

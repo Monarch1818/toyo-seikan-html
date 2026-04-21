@@ -68,6 +68,7 @@
             color: #fff;
         }
 
+
         @media (max-width: 992px) {
 
             .btn-academic {
@@ -318,7 +319,7 @@
                                         <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
                                         <p>30 นาที</p>
                                         <div class="link-btn">
-                                            <button type="button" class="btn btn-link"><a href="index.php">ดูวิดีโอ</a></button>
+                                            <button type="button" class="btn btn-link"><a href="Learn.php">ดูวิดีโอ</a></button>
                                         </div>
                                     </div>
 
