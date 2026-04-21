@@ -113,7 +113,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </form>
     </div>
 
-    <!-- Footer -->
     <footer class="bg-primary text-white text-center mt-5 p-2">
         © 2026 Your Company
     </footer>
