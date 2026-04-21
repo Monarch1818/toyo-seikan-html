@@ -2,10 +2,11 @@
 
 <style>
     .container-result {
-        h4 {
-            margin-top: 30px;
-            padding-left: clamp(24px, 10vw, 70px);
-        }
+        padding: clamp(16px, 4vw, 40px) clamp(16px, 5vw, 60px);
+    }
+
+    .container-result {
+
 
         .card-header {
             background-color: #0D2EA0;
@@ -48,6 +49,9 @@
         }
 
         @media (max-width: 576px) {
+            h4 {
+                text-align: center;
+            }
 
             .custom-card {
                 width: 90%;
