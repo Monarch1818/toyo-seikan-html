@@ -1,112 +1,119 @@
-<?php include "includes/header.php"; ?>
+<?php
+$title = "Announcement";
+include "includes/header.php" ?>
 
-<main class="pt-5">
-    <h1 class="container-fluid text-center mb-3">
-        ข่าวประชาสัมพันธ์
-    </h1>
-    <div class="container">
-        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-5">
-
-            <!-- a-1 -->
-            <div class="col">
-                <a class="card p-0 text-light overflow-hidden" href="announcement-detail.php">
-                    <img src="https://picsum.photos/100/100" alt="img" class="card-img">
-                    <div class="card-img-overlay d-flex flex-column p-0">
-                        <div class="mt-auto p-2" style="background: rgba(0,0,0,0.5);">
-                            <h5 class="card-title">ประกาศฝึกงาน</h5>
-                            <p class="card-text">
-                                <img src="assets/images/cer1.png" width="15"> 10 กันยายน 2568
-                            </p>
-                            <p class="card-text">พน. หยุด</p>
+<main class="px-5 py-3">
+    <div>
+        <h3 class="text-center">ข่าวประชาสัมพันธ์</h3>
+        <div class="container-fluid row gy-4">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="announcement-detail.php">
+                    <div class="card position-relative h-100 w-100">
+                        <img src="assets/images/announcements/am-3.png" alt="announcement image" class="card-img">
+                        <div class="card-img-overlay text-light p-0">
+                            <div class="overlay-content container-fluid position-absolute bottom-0">
+                                <h5 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Molestias
+                                    autem
+                                    neque impedit? Rem sequi hic necessitatibus quaerat odit?</h5>
+                                <div>
+                                    <p class="mb-0"><img src="assets/images/calender.png" alt=""> 10 เมษายน 2564</p>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </a>
             </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card position-relative h-100 w-100">
+                    <img src="assets/images/announcements/am-3.png" alt="announcement image" class="card-img">
+                    <div class="card-img-overlay text-light p-0">
+                        <div class="overlay-content container-fluid position-absolute bottom-0">
+                            <h5 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Molestias
+                                autem
+                                neque impedit? Rem sequi hic necessitatibus quaerat odit?</h5>
+                            <div>
+                                <p class="mb-0"><img src="assets/images/calender.png" alt=""> 10 เมษายน 2564</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
 
-            <!-- a-2 -->
-            <div class="col">
-                <a class="card p-0 text-light overflow-hidden" href="announcement-detail.php">
-                    <img src="https://picsum.photos/101/101" alt="img" class="card-img">
-                    <div class="card-img-overlay d-flex flex-column p-0">
-                        <div class="mt-auto p-2" style="background: rgba(0,0,0,0.5);">
-                            <h5 class="card-title">ประกาศหางาน</h5>
-                            <p class="card-text">
-                                <img src="assets/images/cer1.png" width="15"> 20 กันยายน 2568
-                            </p>
-                            <p class="card-text">บริษัท Bangkok Web Solution</p>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
-
-            <!-- a-3 -->
-            <div class="col">
-                <a class="card p-0 text-light overflow-hidden" href="announcement-detail.php">
-                    <img src="https://picsum.photos/102/102" alt="img" class="card-img">
-                    <div class="card-img-overlay d-flex flex-column p-0">
-                        <div class="mt-auto p-2" style="background: rgba(0,0,0,0.5);">
-                            <h5 class="card-title">มีคนตกงาน</h5>
-                            <p class="card-text">
-                                <img src="assets/images/cer1.png" width="15"> 5 ตุลาคม 2550
-                            </p>
-                            <p class="card-text">นายอานุภาพ มงคลสุขทวี ตกงาน</p>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card position-relative h-100 w-100">
+                    <img src="assets/images/announcements/am-3.png" alt="announcement image" class="card-img">
+                    <div class="card-img-overlay text-light p-0">
+                        <div class="overlay-content container-fluid position-absolute bottom-0">
+                            <h5 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Molestias
+                                autem
+                                neque impedit? Rem sequi hic necessitatibus quaerat odit?</h5>
+                            <div>
+                                <p class="mb-0"><img src="assets/images/calender.png" alt=""> 10 เมษายน 2564</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
-
-            <!-- a-4 -->
-            <div class="col">
-                <a class="card p-0 text-light overflow-hidden" href="announcement-detail.php">
-                    <img src="https://picsum.photos/103/103" alt="img" class="card-img">
-                    <div class="card-img-overlay d-flex flex-column p-0">
-                        <div class="mt-auto p-2" style="background: rgba(0,0,0,0.5);">
-                            <h5 class="card-title">อัพเดต php!</h5>
-                            <p class="card-text">
-                                <img src="assets/images/cer1.png" width="15"> 4 กันยายน 2569
-                            </p>
-                            <p class="card-text">PHP มีการอัพเดต อัพเดตด่วน!</p>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card position-relative h-100 w-100">
+                    <img src="assets/images/announcements/am-6.png" alt="announcement image" class="card-img h-100">
+                    <div class="card-img-overlay text-light p-0">
+                        <div class="overlay-content container-fluid position-absolute bottom-0">
+                            <h5 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Molestias
+                                autem
+                                neque impedit? Rem sequi hic necessitatibus quaerat odit?</h5>
+                            <div>
+                                <p class="mb-0"><img src="assets/images/calender.png" alt=""> 10 เมษายน 2564</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
-
-            <!-- a-5 -->
-            <div class="col">
-                <a class="card p-0 text-light overflow-hidden" href="announcement-detail.php">
-                    <img src="https://picsum.photos/104/104" alt="img" class="card-img">
-                    <div class="card-img-overlay d-flex flex-column p-0">
-                        <div class="mt-auto p-2" style="background: rgba(0,0,0,0.5);">
-                            <h5 class="card-title">ประกาศฝึกงาน</h5>
-                            <p class="card-text">
-                                <img src="assets/images/cer1.png" width="15"> 10 กันยายน 2568
-                            </p>
-                            <p class="card-text">พน. หยุด</p>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card position-relative h-100 w-100">
+                    <img src="assets/images/announcements/am-4.png" alt="announcement image" class="card-img">
+                    <div class="card-img-overlay text-light p-0">
+                        <div class="overlay-content container-fluid position-absolute bottom-0">
+                            <h5 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Molestias
+                                autem
+                                neque impedit? Rem sequi hic necessitatibus quaerat odit?</h5>
+                            <div>
+                                <p class="mb-0"><img src="assets/images/calender.png" alt=""> 10 เมษายน 2564</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
-
-            <!-- a-6 -->
-            <div class="col">
-                <a class="card p-0 text-light overflow-hidden" href="announcement-detail.php">
-                    <img src="https://picsum.photos/100/100" alt="img" class="card-img">
-                    <div class="card-img-overlay d-flex flex-column p-0">
-                        <div class="mt-auto p-2" style="background: rgba(0,0,0,0.5);">
-                            <h5 class="card-title">ประกาศฝึกงาน</h5>
-                            <p class="card-text">
-                                <img src="assets/images/cer1.png" width="15"> 10 กันยายน 2568
-                            </p>
-                            <p class="card-text">พน. หยุด</p>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card position-relative h-100 w-100">
+                    <img src="assets/images/announcements/am-7.png" alt="announcement image" class="card-img h-100">
+                    <div class="card-img-overlay text-light p-0">
+                        <div class="overlay-content container-fluid position-absolute bottom-0">
+                            <h5 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Molestias
+                                autem
+                                neque impedit? Rem sequi hic necessitatibus quaerat odit?</h5>
+                            <div>
+                                <p class="mb-0"><img src="assets/images/calender.png" alt=""> 10 เมษายน 2564</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
-
 
         </div>
-
     </div>
 </main>
 
-<?php include "includes/footer.php"; ?>
+<?php include "includes/footer.php" ?>
