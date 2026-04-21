@@ -5,9 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Toyo seikan</title>
-
-  <link rel="stylesheet" href="assets\bootstrap-5.0.2\css\bootstrap.min.css">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/fontawesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
@@ -23,8 +22,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-         
-        <li class="nav-item">
+
+          <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#"><img src="assets/images/iconhome.png" class="logohome" alt="" srcset=""></a>
           </li>
           <li class="nav-item">
