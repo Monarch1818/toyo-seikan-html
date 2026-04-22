@@ -1,4 +1,19 @@
 <style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        flex: 1;
+    }
+
     .tooltip-inner {
         background-color: #1F7BCC !important;
         color: #fff !important;
