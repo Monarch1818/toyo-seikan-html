@@ -2,10 +2,9 @@
 
 <style>
     .btn-back {
-        border-radius: 3px !important;
-        margin-top: 60px;
-        margin-left: 68px;
+        border-radius: 6px;
         background-color: #1F7BCC !important;
+        margin-top: 10px;
     }
 
     .title-box {
@@ -35,12 +34,6 @@
         border-radius: 8px;
     }
 
-    .col-lg-8 {
-        flex: 0 0 auto;
-        width: 50%;
-        margin-left: 130px;
-    }
-
     .btn-sm {
         border-radius: 3px !important;
         margin-top: 60px;
@@ -63,7 +56,7 @@
 
     .btn-warning {
         color: white;
-        width: 350px;
+        width: 200px;
         display: block;
         /* สำคัญ */
         margin: 10px auto;
@@ -112,10 +105,15 @@
     .form-floating>.form-control:not(:placeholder-shown)~label {
         background: transparent !important;
     }
+
+    .offcanvas {
+        z-index: 1055;
+    }
 </style>
 
 <main class="container-fluid ">
-    <button type="button" class="btn btn-primary btn-back">
+    <button type="button" class="btn btn-primary btn-back"
+        onclick="window.location.href='course-detail.php'">
         &lt; Back
     </button>
     <div class="text-center">
@@ -125,10 +123,18 @@
         </div>
     </div>
     <div class="mt-3 ml-130">
+        <button class="btn btn-light d-lg-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu"
+            style="margin-bottom: 10px;">
+            ☰
+        </button>
+
         <div class="row">
             <!-- LEFT -->
-            <div class="col-lg-8">
-                <div class="card mb-2 p-2 d-flex flex-row align-items-center gap-2">
+            <div class="col-12 col-lg-8">
+                <div class=" card mb-2 p-2 d-flex flex-row align-items-center gap-2">
                     <i class="bi bi-bullseye" style="color: #1F7BCC;"></i>
                     <h6 class="mb-0">Introduction</h6>
                 </div>
@@ -144,10 +150,10 @@
             </div>
 
             <!-- RIGHT -->
-            <div class="col-lg-4">
+            <div class="col-12 col-lg-4 d-none d-lg-block">
 
                 <!-- LIST -->
-                <div class="accordion" id="accordionExample">
+                <div class=" accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -185,23 +191,135 @@
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 120px; width:400px;"></textarea>
-                                <label for="floatingTextarea2" class="w-100 text-center ">Type a message and take notes.</label>
-                                <button type="button" class="btn btn-warning">Note</button>
+                                <textarea class="form-control note-input" id="floatingTextarea2"></textarea>
+                                <label for="floatingTextarea2" class="w-100 text-center">Type a message and take notes.</label>
+                                <button type="button" class="btn btn-warning text-white save-note">
+                                    Note
+                                </button>
                             </div>
                         </div>
                     </div>
                     <div class="card text-bg-light mb-3">
                         <div class="card-header text-center">Note</div>
-                        <div class="card-body" style="margin-bottom: 20px;">
-                            <p class="card-text">1.I Think..</p>
-                            <p class="card-text">2.Very good..</p>
+                        <div class="card-body" id="noteDisplay" style="margin-bottom: 20px;">
+                            <p class="card-text">1. I Think..</p>
+                            <p class="card-text">2. Very good..</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
     </div>
 </main>
+
+<div class="offcanvas offcanvas-start d-lg-none"
+    tabindex="-1"
+    id="mobileMenu"
+    style="width: 320px;">
+
+    <div class="offcanvas-body">
+
+        <div class="accordion" id="mobileAccordion">
+
+            <!-- LIST -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#m1">
+                        List
+                    </button>
+                </h2>
+
+                <div id="m1" class="accordion-collapse collapse show"
+                    data-bs-parent="#mobileAccordion">
+                    <div class="p-2">
+                        <p>Chapter 1: Introduction</p>
+
+                        <p>Introduction</p>
+                        <span class="custom-btn text-white">Completed</span>
+
+                        <hr>
+
+                        <p>Chapter 1: Introduction</p>
+                        <span class="custom-btn text-white">Completed</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NOTE -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#m2">
+                        Note
+                    </button>
+                </h2>
+
+                <div id="m2" class="accordion-collapse collapse"
+                    data-bs-parent="#mobileAccordion">
+                    <div class="p-2">
+                        <div class="form-floating">
+                            <textarea class="form-control note-input" id="floatingTextMobile" placeholder=" "></textarea>
+                            <label for="floatingTextMobile">Type a message and take notes.</label>
+                        </div>
+                        <button type="button" class="btn btn-warning text-white save-note">
+                            Note
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- NOTE CARD -->
+        <div class="card text-bg-light mt-3">
+            <div class="card-header text-center">Note</div>
+            <div class="card-body">
+                <p>1. I Think..</p>
+                <p>2. Very good..</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll(".save-note").forEach(btn => {
+
+        btn.addEventListener("click", function() {
+
+            let textarea = this.parentElement.querySelector(".note-input");
+            let noteText = textarea.value.trim();
+
+            if (noteText === "") {
+                alert("กรุณาพิมพ์ข้อความก่อน");
+                return;
+            }
+
+            // นับจากฝั่ง desktop
+            let count = document.querySelectorAll("#noteDisplay p").length + 1;
+
+            let pDesktop = document.createElement("p");
+            pDesktop.className = "card-text";
+            pDesktop.textContent = count + ". " + noteText;
+
+            // clone สำหรับ mobile
+            let pMobile = pDesktop.cloneNode(true);
+
+            // ===== Desktop =====
+            document.getElementById("noteDisplay").appendChild(pDesktop);
+
+            // ===== Mobile (offcanvas) =====
+            let mobileNoteBox = document.querySelector(".offcanvas .card-body");
+            if (mobileNoteBox) {
+                mobileNoteBox.appendChild(pMobile);
+            }
+
+            textarea.value = "";
+        });
+
+    });
+</script>
 
 <?php include 'includes/footer.php'; ?>
