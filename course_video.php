@@ -1,10 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
 <script>
-        
         document.addEventListener('DOMContentLoaded', function() {
-            
-            
             window.addEventListener('resize', function() {
                 var offcanvasElement = document.getElementById('sidebarOffcanvas');
                 if (offcanvasElement) {
