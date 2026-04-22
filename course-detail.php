@@ -334,7 +334,7 @@
 
                                     <div class="group2">
                                         <div class="link-btn">
-                                            <button type="button" class="btn btn-link"><a href="index.php">ทำข้อสอบ</a></button>
+                                            <button type="button" class="btn btn-link"><a href="Exam.php">ทำข้อสอบ</a></button>
                                         </div>
                                     </div>
 
@@ -471,8 +471,6 @@
             </div>
         </div>
     </div>
-
-
 </main>
 
 <?php include 'includes/footer.php'; ?>
