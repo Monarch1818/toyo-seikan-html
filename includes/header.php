@@ -18,7 +18,8 @@
 <body>
   <nav class="navmain navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.php"><img src="assets/images/logo.jpg" class="logonav" alt="" srcset=""></a>
+      <a class="navbar-brand" href="index.php"><img src="assets/images/toyo-seikan-logo-sm.jpg" class="logonav" alt=""
+          srcset=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -51,8 +52,8 @@
 
         </ul>
         <form class="d-flex">
-          <button type="button" class="btn btn-primary"><span>Username</span><img src="assets/images/user.png"
-              class="logouser" alt="" srcset=""></button>
+          <button type="button" class="btn btn-primary"><span>Username</span><img src="assets/images/users/user-1.png"
+              class="logouser rounded-circle" alt="" srcset=""></button>
         </form>
       </div>
     </div>

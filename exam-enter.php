@@ -20,7 +20,7 @@
         </div>
     </div>
     <div class="d-flex align-items-center flex-column w-100 gap-5">
-        <div class="card border-primary w-100 p-5" style="max-width: 600px;">
+        <div class="card border-primary w-100 p-3" style="max-width: 600px;">
             <div class="card-body">
                 <div class="text-center">
                     <h5>Course Examination</h5>

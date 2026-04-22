@@ -47,28 +47,32 @@
             <h5>The exams can choose only one answer.</h5>
             <h4>2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
 
-            <div class="p-md-5 fs-5">
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="answers" id="answer1">
-                    <label class="form-check-label border border-2 w-100" for="answer1">
+            <div class="px-md-5 py-md-3 fs-5">
+                <div class="form-check position-relative ps-0">
+                    <input class="form-check-input position-absolute" style="left: 20px; top: 1px;" type="radio"
+                        name="answers" id="answer1">
+                    <label class="form-check-label border border-2 w-100 ps-3" for="answer1">
                         1. Lorem ipsum dolor sit amet.
                     </label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="answers" id="answer2">
-                    <label class="form-check-label border border-2 w-100" for="answer2">
+                <div class="form-check  position-relative ps-0">
+                    <input class="form-check-input position-absolute" style="left: 20px; top: 1px;" type="radio"
+                        name="answers" id="answer2">
+                    <label class="form-check-label border border-2 w-100 ps-3" for="answer2">
                         2. Lorem, ipsum dolor.
                     </label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="answers" id="answer3">
-                    <label class="form-check-label border border-2 w-100" for="answer3">
+                <div class="form-check  position-relative ps-0">
+                    <input class="form-check-input position-absolute" style="left: 20px; top: 1px;" type="radio"
+                        name="answers" id="answer3">
+                    <label class="form-check-label border border-2 w-100 ps-3" for="answer3">
                         3. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     </label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="answers" id="answer4">
-                    <label class="form-check-label border border-2 w-100" for="answer4">
+                <div class="form-check position-relative ps-0">
+                    <input class="form-check-input position-absolute" style="left: 20px; top: 1px;" type="radio"
+                        name="answers" id="answer4">
+                    <label class="form-check-label border border-2 w-100 ps-3" for="answer4">
                         4. Lorem ipsum dolor sit amet consectetur adipisicing.
                     </label>
                 </div>

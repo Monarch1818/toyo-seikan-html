@@ -6,7 +6,7 @@
 
 <main class="exam-summary-page-style p-sm-5 p-2">
     <div class="row px-sm-5 mx-sm-5">
-        <div class="col-md-8 col-12">
+        <div class="col-md-8 col-12 mb-3">
             <div class="card border-primary mb-3">
                 <div class="card-body text-center py-3">
                     <div>
