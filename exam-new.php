@@ -38,53 +38,64 @@
                     echo "btn-success" ?>
                 <?php if ($i == 3)
                     echo "btn-primary m-0" ?> <?php if ($i > 3)
-                    echo "btn-outline-secondary" ?>">
+                    echo "btn-outline-secondary" ?>" data-bs-toggle="collapse"
+                        data-bs-target="#question<?php echo $i ?>" aria-expanded="<?php echo ($i == 3) ? "true" : "false" ?>"
+                    aria-controls="question<?php echo $i ?>">
                     <?php echo $i ?>
                 </button>
             <?php endfor ?>
         </div>
-        <div>
-            <h5>The exams can choose only one answer.</h5>
-            <h4>2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+        <div id="questions">
+            <?php for ($i = 1; $i <= 10; $i++): ?>
+                <div class="collapse <?php if ($i == 3)
+                    echo "show" ?>" id="question<?php echo $i ?>" data-bs-parent="#questions">
+                    <h5>The exams can choose only one answer.</h5>
+                    <h4>
+                        <?php echo $i ?>. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </h4>
 
-            <div class="px-md-5 py-md-3 fs-5">
-                <div class="form-check position-relative ps-0">
-                    <input class="form-check-input position-absolute" style="left: 20px; top: 1px;" type="radio"
-                        name="answers" id="answer1">
-                    <label class="form-check-label border border-2 w-100 ps-3" for="answer1">
-                        1. Lorem ipsum dolor sit amet.
-                    </label>
-                </div>
-                <div class="form-check  position-relative ps-0">
-                    <input class="form-check-input position-absolute" style="left: 20px; top: 1px;" type="radio"
-                        name="answers" id="answer2">
-                    <label class="form-check-label border border-2 w-100 ps-3" for="answer2">
-                        2. Lorem, ipsum dolor.
-                    </label>
-                </div>
-                <div class="form-check  position-relative ps-0">
-                    <input class="form-check-input position-absolute" style="left: 20px; top: 1px;" type="radio"
-                        name="answers" id="answer3">
-                    <label class="form-check-label border border-2 w-100 ps-3" for="answer3">
-                        3. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    </label>
-                </div>
-                <div class="form-check position-relative ps-0">
-                    <input class="form-check-input position-absolute" style="left: 20px; top: 1px;" type="radio"
-                        name="answers" id="answer4">
-                    <label class="form-check-label border border-2 w-100 ps-3" for="answer4">
-                        4. Lorem ipsum dolor sit amet consectetur adipisicing.
-                    </label>
-                </div>
+                    <div class="px-md-5 py-md-3 fs-5">
+                        <div class="form-check position-relative ps-0">
+                            <input class="form-check-input position-absolute" style="left: 20px; top: 1px;" type="radio"
+                                name="answers" id="answer1">
+                            <label class="form-check-label border border-2 w-100 ps-3" for="answer1">
+                                1. Lorem ipsum dolor sit amet.
+                            </label>
+                        </div>
+                        <div class="form-check  position-relative ps-0">
+                            <input class="form-check-input position-absolute" style="left: 20px; top: 1px;" type="radio"
+                                name="answers" id="answer2">
+                            <label class="form-check-label border border-2 w-100 ps-3" for="answer2">
+                                2. Lorem, ipsum dolor.
+                            </label>
+                        </div>
+                        <div class="form-check  position-relative ps-0">
+                            <input class="form-check-input position-absolute" style="left: 20px; top: 1px;" type="radio"
+                                name="answers" id="answer3">
+                            <label class="form-check-label border border-2 w-100 ps-3" for="answer3">
+                                3. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </label>
+                        </div>
+                        <div class="form-check position-relative ps-0">
+                            <input class="form-check-input position-absolute" style="left: 20px; top: 1px;" type="radio"
+                                name="answers" id="answer4">
+                            <label class="form-check-label border border-2 w-100 ps-3" for="answer4">
+                                4. Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </label>
+                        </div>
 
-            </div>
-            <div class="d-flex justify-content-center gap-2">
-                <button type="button" class="btn btn-outline-primary">Previous</button>
-                <button type="button" class="btn btn-success px-4" data-bs-toggle="modal"
-                    data-bs-target="#sendModal">Send</button>
-            </div>
+                    </div>
+
+                </div>
+            <?php endfor ?>
+        </div>
+        <div class="d-flex justify-content-center gap-2">
+            <button type="button" class="btn btn-outline-primary">Previous</button>
+            <button type="button" class="btn btn-success px-4" data-bs-toggle="modal"
+                data-bs-target="#sendModal">Send</button>
         </div>
     </div>
+
 
 </main>
 

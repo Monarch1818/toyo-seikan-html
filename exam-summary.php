@@ -5,7 +5,7 @@
 </style>
 
 <main class="exam-summary-page-style p-sm-5 p-2">
-    <div class="row px-sm-5 mx-sm-5">
+    <div class="row px-md-5 mx-md-5 px-sm-2 mx-sm-2">
         <div class="col-md-8 col-12 mb-3">
             <div class="card border-primary mb-3">
                 <div class="card-body text-center py-3">
