@@ -230,7 +230,8 @@
             </table>
         </div>
         <div class="text-center completed-wrapper">
-            <button class="btn btn-primary btn-completed">Completed</button>
+            <button class="btn btn-primary btn-completed"
+                onclick="window.location.href='course-detail.php'">Completed</button>
         </div>
     </div>
 </main>
