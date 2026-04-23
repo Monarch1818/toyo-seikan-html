@@ -166,7 +166,7 @@
             </div>
         </div>
         <div class="text-center">
-            <button type="submit" class="btn px-5 text-light" style="background-color: #1F7BCC;">ส่ง</button>
+            <a href="course-main.php" class="btn px-5 text-light" style="background-color: #1F7BCC;">ส่ง</a>
         </div>
     </form>
 

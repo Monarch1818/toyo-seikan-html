@@ -116,7 +116,7 @@
     </div>
 
     <div class="text-center">
-        <a href="#" class="btn px-5 py-2 text-light" style="background-color: #0D2EA0;">Back</a>
+        <a href="course-main.php" class="btn px-5 py-2 text-light" style="background-color: #0D2EA0;">Back</a>
     </div>
 
 </main>

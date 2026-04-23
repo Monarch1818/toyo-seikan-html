@@ -5,7 +5,7 @@
 </style>
 
 <main class="course-video-page-style p-xl-5 p-2 w-100 h-100 position-relative">
-    <a href="#" class="btn text-light px-4 position-absolute top-10 start-10"
+    <a href="course-main.php" class="btn text-light px-4 position-absolute top-10 start-10"
         style="background-color: #1F7BCC;">Back</a>
 
     <button class="d-xl-none position-absolute top-10 end-0 btn btn-primary" type="button" data-bs-toggle="offcanvas"
@@ -139,7 +139,7 @@
     </div>
 </main>
 
-
-<script></script>
+<!-- โหลด script file แยก -->
+<script src="assets\bootstrap-5.0.2\js\bootstrap.min.js"></script>
 
 <?php include "includes/footer.php"; ?>

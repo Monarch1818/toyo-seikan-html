@@ -142,9 +142,9 @@
     questionsForm.addEventListener("submit", async function (event) {
         event.preventDefault();
 
-        await delay(2000); //สมมุตว่ากำลังส่งข้อมูล
+        //await delay(2000); //สมมุตว่ากำลังส่งข้อมูล
 
-        const randomResponse = Math.random() < 0.75; //สุ่มว่าจะสำเร็จหรือไม่
+        const randomResponse = true;//สุ่มว่าจะสำเร็จหรือไม่
 
         console.log(randomResponse)
 

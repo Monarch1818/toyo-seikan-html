@@ -67,7 +67,7 @@
         </div>
     </div>
     <div class="text-center">
-        <button class="btn text-light" style="background-color: #1F7BCC;">Completed</button>
+        <a class="btn text-light" style="background-color: #1F7BCC;" href="course-main.php">Completed</a>
     </div>
 </main>
 
