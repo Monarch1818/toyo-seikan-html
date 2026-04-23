@@ -47,7 +47,7 @@
 
         </ul>
         <form class="d-flex">
-          <button type="button" class="btn btn-primary"><span>Username</span><img src="assets/images/user.png" class="logouser" alt="" srcset=""></button>
+          <button type="button" class="btn btn-primary" onclick="window.location.href='profile.php'"><span>Username</span><img src="assets/images/user.png" class="logouser" alt="" srcset=""></button>
         </form>
       </div>
     </div>
