@@ -409,7 +409,7 @@
                                                 <div class="group2">
                                                     <div class="link-btn">
                                                         <button type="button" class="btn btn-link"><a
-                                                                href="index.php">ทำข้อสอบ</a></button>
+                                                                href="exam-enter.php">ทำข้อสอบ</a></button>
                                                     </div>
                                                 </div>
 
@@ -470,7 +470,7 @@
                                                 <div class="group2">
                                                     <div class="link-btn">
                                                         <button type="button" class="btn btn-link"><a
-                                                                href="index.php">ทำข้อสอบ</a></button>
+                                                                href="exam-enter.php">ทำข้อสอบ</a></button>
                                                     </div>
                                                 </div>
 
@@ -531,7 +531,7 @@
                                                 <div class="group2">
                                                     <div class="link-btn">
                                                         <button type="button" class="btn btn-link"><a
-                                                                href="index.php">ทำข้อสอบ</a></button>
+                                                                href="exam-enter.php">ทำข้อสอบ</a></button>
                                                     </div>
                                                 </div>
 
@@ -592,7 +592,7 @@
                                                 <div class="group2">
                                                     <div class="link-btn">
                                                         <button type="button" class="btn btn-link"><a
-                                                                href="index.php">ทำข้อสอบ</a></button>
+                                                                href="exam-enter.php">ทำข้อสอบ</a></button>
                                                     </div>
                                                 </div>
 
@@ -1061,7 +1061,7 @@
                                                 <div class="group2">
                                                     <div class="link-btn">
                                                         <button type="button" class="btn btn-link"><a
-                                                                href="index.php">ทำข้อสอบ</a></button>
+                                                                href="exam-enter.php">ทำข้อสอบ</a></button>
                                                     </div>
                                                 </div>
 
@@ -1362,7 +1362,7 @@
                                                 <div class="group2">
                                                     <div class="link-btn">
                                                         <button type="button" class="btn btn-link"><a
-                                                                href="index.php">ทำข้อสอบ</a></button>
+                                                                href="exam-enter.php">ทำข้อสอบ</a></button>
                                                     </div>
                                                 </div>
 
@@ -1662,7 +1662,7 @@
                                                 <div class="group2">
                                                     <div class="link-btn">
                                                         <button type="button" class="btn btn-link"><a
-                                                                href="index.php">ทำข้อสอบ</a></button>
+                                                                href="exam-enter.php">ทำข้อสอบ</a></button>
                                                     </div>
                                                 </div>
 
@@ -1952,7 +1952,7 @@
                                         <div class="group2">
                                             <div class="link-btn">
                                                 <button type="button" class="btn btn-link"><a
-                                                        href="index.php">ทำข้อสอบ</a></button>
+                                                        href="exam-enter.php">ทำข้อสอบ</a></button>
                                             </div>
                                         </div>
 
