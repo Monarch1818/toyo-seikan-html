@@ -1,7 +1,9 @@
 <?php include "includes/header.php"; ?>
 
 <style>
-    .exam-summary-page-style {}
+    .exam-summary-page-style {
+        min-height: 78vh;
+    }
 </style>
 
 <main class="exam-summary-page-style p-sm-5 p-2">
