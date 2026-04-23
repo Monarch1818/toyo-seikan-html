@@ -28,7 +28,7 @@
     <div class="d-flex justify-content-center mb-5">
         <div class="card px-5 py-2">
             <div class="card-body">
-                <h5 class="m-0">Time: <span class="text-danger" id="countdownDisplay"></span>
+                <h5 class="m-0">Time: <span class="text-danger" id="countdownDisplay">00:00:00</span>
                 </h5>
             </div>
         </div>
@@ -36,7 +36,7 @@
     <div class="m-sm-5">
         <div class="border-bottom border-2 d-flex justify-content-between mb-3">
             <h5>Question</h5>
-            <h5>0/10</h5>
+            <h5 id="questionCount">1/10</h5>
         </div>
 
         <div class="btn-group w-100 mb-3" id="questionButtons">
@@ -470,7 +470,7 @@
     function updateQuestion() {
         const questionButtons = document.getElementById("questionButtons");
         const questions = document.getElementById("questions");
-
+        const questionCount = document.getElementById("questionCount");
 
         for (i = 1; i <= 10; i++) {
             const button = questionButtons.children[i - 1];
@@ -481,7 +481,7 @@
 
                     question.setAttribute("class", "d-block");
                 } else {
-question.setAttribute("class", "d-none");
+                    question.setAttribute("class", "d-none");
                 }
 
             } else if (i == currentQuestion) {
@@ -493,6 +493,8 @@ question.setAttribute("class", "d-none");
 
             }
         }
+
+        questionCount.textContent = `${(currentQuestion <= 10) ? currentQuestion : 10}/10`
     }
 
     //ตัวนับถอยหลัง
@@ -501,10 +503,11 @@ question.setAttribute("class", "d-none");
         const display = document.getElementById("countdownDisplay");
 
         const interval = setInterval(() => {
-            const mins = Math.floor(timeInSec / 60);
+            const hours = Math.floor(timeInSec / 3600);
+            const mins = Math.floor((timeInSec % 3600) / 60);
             const secs = timeInSec % 60;
 
-            display.textContent = `00:${String(mins).padStart(2, '0')}:${String(secs).padStart(2, "0")}`
+            display.textContent = `${String(hours).padStart(2, '0')}:${String(mins).padStart(2, '0')}:${String(secs).padStart(2, "0")}`
 
             if (timeInSec <= 0) {
                 clearInterval(interval);
@@ -515,7 +518,7 @@ question.setAttribute("class", "d-none");
         }, 1000)
     }
 
-    startCountdown(1);
+    startCountdown(80);
 </script>
 
 <?php include "includes/footer.php"; ?>

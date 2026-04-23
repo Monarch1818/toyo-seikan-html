@@ -8,7 +8,7 @@
 
 <main class="exam-summary-page-style p-sm-5 p-2">
     <div class="row px-md-5 mx-md-5 px-sm-2 mx-sm-2">
-        <div class="col-md-8 col-12 mb-3">
+        <div class="col-md-8 col-12">
             <div class="card border-primary mb-3">
                 <div class="card-body text-center py-3">
                     <div>
@@ -52,17 +52,36 @@
                 <h5>3</h5>
             </div>
             <ul class="list-group list-group-flush">
-                <?php for ($i = 1; $i <= 10; $i++): ?>
-                    <?php if ($i % 3 == 0): ?>
-                        <li class="list-group-item d-flex justify-content-between px-0"><span class=" text-success"><img
-                                    src="assets/images/exam/green-dot.png" alt="">Question
-                                <?php echo $i ?></span><span class="text-success">1</span></li>
-                    <?php else: ?>
-                        <li class="list-group-item d-flex justify-content-between px-0"><span><img
-                                    src="assets/images/exam/red-dot.png" alt="">Question
-                                <?php echo $i ?></span><span>0</span></li>
-                    <?php endif ?>
-                <?php endfor ?>
+                <li class="list-group-item d-flex justify-content-between px-0"><span><img
+                            src="assets/images/exam/red-dot.png" alt="">Question 1
+                    </span><span>0</span></li>
+                <li class="list-group-item d-flex justify-content-between px-0"><span class=" text-success"><img
+                            src="assets/images/exam/green-dot.png" alt="">Question 2
+                    </span><span class="text-success">1</span></li>
+                <li class="list-group-item d-flex justify-content-between px-0"><span><img
+                            src="assets/images/exam/red-dot.png" alt="">Question 3
+                    </span><span>0</span></li>
+                <li class="list-group-item d-flex justify-content-between px-0"><span><img
+                            src="assets/images/exam/red-dot.png" alt="">Question 4
+                    </span><span>0</span></li>
+                <li class="list-group-item d-flex justify-content-between px-0"><span><img
+                            src="assets/images/exam/red-dot.png" alt="">Question 5
+                    </span><span>0</span></li>
+                <li class="list-group-item d-flex justify-content-between px-0"><span><img
+                            src="assets/images/exam/red-dot.png" alt="">Question 6
+                    </span><span>0</span></li>
+                <li class="list-group-item d-flex justify-content-between px-0"><span class=" text-success"><img
+                            src="assets/images/exam/green-dot.png" alt="">Question 7
+                    </span><span class="text-success">1</span></li>
+                <li class="list-group-item d-flex justify-content-between px-0"><span class=" text-success"><img
+                            src="assets/images/exam/green-dot.png" alt="">Question 8
+                    </span><span class="text-success">1</span></li>
+                <li class="list-group-item d-flex justify-content-between px-0"><span><img
+                            src="assets/images/exam/red-dot.png" alt="">Question 9
+                    </span><span>0</span></li>
+                <li class="list-group-item d-flex justify-content-between px-0"><span><img
+                            src="assets/images/exam/red-dot.png" alt="">Question 10
+                    </span><span>0</span></li>
             </ul>
         </div>
     </div>
