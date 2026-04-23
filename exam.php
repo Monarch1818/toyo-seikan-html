@@ -449,11 +449,10 @@
     questionsForm.addEventListener("submit", function (event) {
         event.preventDefault();
 
-        currentQuestion++;
+        if (currentQuestion < 11) currentQuestion++;
         updateQuestion();
 
         if (currentQuestion > 10) {
-
             const modal = new bootstrap.Modal(document.getElementById("sendModal"));
             modal.show();
         }
