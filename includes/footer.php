@@ -3,7 +3,6 @@
 </footer>
 
 
-
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/js/all.min.js"></script>
 <script src="js/script.js"></script>

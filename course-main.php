@@ -101,9 +101,13 @@
         column-gap: 17px;
     }
 
-
     .green {
         background: #2CD776;
+    }
+
+    .evaluation-link {
+        text-decoration: none !important;
+        color: #000;
     }
 </style>
 
@@ -121,9 +125,12 @@
                 </div>
 
                 <div class="d-flex align-items-start">
-                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
                         <div class="road">
-                            <button class="nav-link active " id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                            <button class="nav-link active " id="v-pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                                aria-selected="true">
                                 <p class="number">01</p>
                                 <div class="line"></div>
                                 <div class="wrap">
@@ -140,7 +147,9 @@
                             </button>
                         </div>
                         <div class="road">
-                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-profile" type="button" role="tab"
+                                aria-controls="v-pills-profile" aria-selected="false">
                                 <p class="number">02</p>
                                 <div class="line"></div>
                                 <div class="wrap">
@@ -156,13 +165,16 @@
                             </button>
                         </div>
                         <div class="road">
-                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-messages" type="button" role="tab"
+                                aria-controls="v-pills-messages" aria-selected="false">
                                 <p class="number">03</p>
                                 <div class="line"></div>
                                 <div class="wrap">
                                     <div class="couurse-name-rd">
                                         <p>การอบรมระบบบรรจุเครื่องดื่มแบบปลอดเชื้อ </p>
-                                        <p>การอบรมระบบบรรจุเครื่องดื่มแบบปลอดเชื้อ (Aseptic Filling System Introduction) </p>
+                                        <p>การอบรมระบบบรรจุเครื่องดื่มแบบปลอดเชื้อ (Aseptic Filling System Introduction)
+                                        </p>
                                     </div>
 
                                     <div class="icon">
@@ -172,7 +184,9 @@
                             </button>
                         </div>
                         <div class="road">
-                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages4" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-messages4" type="button" role="tab"
+                                aria-controls="v-pills-messages" aria-selected="false">
                                 <p class="number">04</p>
                                 <div class="line"></div>
                                 <div class="wrap">
@@ -189,7 +203,9 @@
                         </div>
 
                         <div class="road">
-                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages5" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-messages5" type="button" role="tab"
+                                aria-controls="v-pills-messages" aria-selected="false">
                                 <p class="number">05</p>
                                 <div class="line"></div>
                                 <div class="wrap">
@@ -212,13 +228,15 @@
 
                 <nav aria-label="Page navigation example mt-3">
                     <ul class="pagination">
-                        <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-angle-left"></i></a></li>
+                        <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-angle-left"></i></a>
+                        </li>
                         <li class="page-item active"><a class="page-link" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
                         <li class="page-item"><a class="page-link" href="#">3</a></li>
                         <li class="page-item"><a class="page-link" href="#">4</a></li>
                         <li class="page-item"><a class="page-link" href="#">5</a></li>
-                        <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-angle-right"></i></a></li>
+                        <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-angle-right"></i></a>
+                        </li>
                     </ul>
                 </nav>
 
@@ -229,7 +247,8 @@
                 <div class="course-wrap">
                     <div class="tab-content" id="v-pills-tabContent">
 
-                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab">
                             <div class="card-main mb-3">
                                 <img class="w-100" src="assets/images/course1.png" alt="" srcset="">
                                 <div class="card-body">
@@ -288,38 +307,61 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <p class="mb-0">แบบประเมินหลักสูตร</p>
-                                        <div class="wrap-course-clild">
-                                            <img src="assets/images/cer2.png" alt="" srcset="">
-                                            <p class="mx-0">ทำแบบประเมิน</p>
-                                        </div>
+                                        <a href="course-evaluation.php" class="evaluation-link">
+                                            <div class="wrap-course-clild">
+                                                <img src="assets/images/cer2.png" alt="" srcset="">
+                                                <p class="mx-0">ทำแบบประเมิน</p>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
+                            </div>
+
+                            <div class="mb-5">
+                                <a href="course-result.php" class="btn btn-primary w-100 d-flex justify-content-between"
+                                    style="border-radius: 0px;"><span>Academic
+                                        Summary</span><span>></span></a>
                             </div>
 
                             <div class="course-tab">
                                 <nav>
                                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                        <button class="nav-link active" id="course-detail" data-bs-toggle="tab" data-bs-target="#nav1" type="button" role="tab" aria-controls="nav1" aria-selected="true">รายละเอียดหลักสูตร</button>
-                                        <button class="nav-link" id="course-list" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" tabindex="-1">รายการหลักสูตร</button>
+                                        <button class="nav-link active" id="course-detail" data-bs-toggle="tab"
+                                            data-bs-target="#nav1" type="button" role="tab" aria-controls="nav1"
+                                            aria-selected="true">รายละเอียดหลักสูตร</button>
+                                        <button class="nav-link" id="course-list" data-bs-toggle="tab"
+                                            data-bs-target="#nav-profile" type="button" role="tab"
+                                            aria-controls="nav-profile" aria-selected="false"
+                                            tabindex="-1">รายการหลักสูตร</button>
                                     </div>
                                 </nav>
                                 <div class="tab-content" id="nav-tabContent">
 
-                                    <div class="tab-pane fade show active" id="nav1" role="tabpanel" aria-labelledby="course-detail">
-                                        Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                                    <div class="tab-pane fade show active" id="nav1" role="tabpanel"
+                                        aria-labelledby="course-detail">
+                                        Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen book. It has survived not only five
                                         <br>
                                         <br>
-                                        Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                                        Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen book. It has survived not only five
                                     </div>
 
-                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="course-list">
+                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                        aria-labelledby="course-list">
                                         <div class="course-list">
                                             <div class="list-top">
                                                 <div>
                                                     <span>บทที่ 1</span>
                                                     <span>ชื่อบทเรียน</span>
                                                 </div>
-                                                <button type="button" class="btn btn-secondary d-flex"><img width="24px" class="mx-1" src="assets/images/download-doc.png" alt="" srcset="">เอกสารประกอบการเรียน</button>
+                                                <button type="button" class="btn btn-secondary d-flex"><img width="24px"
+                                                        class="mx-1" src="assets/images/download-doc.png" alt=""
+                                                        srcset="">เอกสารประกอบการเรียน</button>
                                             </div>
 
                                             <div class="list-course">
@@ -346,10 +388,12 @@
                                                 </div>
 
                                                 <div class="group2">
-                                                    <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                                    <img style="width: 20px; height: 20px;"
+                                                        src="assets/images/clock.png" alt="" srcset="">
                                                     <p>30 นาที</p>
                                                     <div class="link-btn">
-                                                        <button type="button" class="btn btn-link"><a href="index.php">ดูวิดีโอ</a></button>
+                                                        <button type="button" class="btn btn-link"><a
+                                                                href="course-video.php">ดูวิดีโอ</a></button>
                                                     </div>
                                                 </div>
 
@@ -364,7 +408,8 @@
 
                                                 <div class="group2">
                                                     <div class="link-btn">
-                                                        <button type="button" class="btn btn-link"><a href="index.php">ทำข้อสอบ</a></button>
+                                                        <button type="button" class="btn btn-link"><a
+                                                                href="index.php">ทำข้อสอบ</a></button>
                                                     </div>
                                                 </div>
 
@@ -375,7 +420,8 @@
                                                     <span>บทที่ 2</span>
                                                     <span>ชื่อบทเรียน</span>
                                                 </div>
-                                                <button type="button" class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
+                                                <button type="button"
+                                                    class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
                                             </div>
 
 
@@ -403,10 +449,12 @@
                                                 </div>
 
                                                 <div class="group2">
-                                                    <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                                    <img style="width: 20px; height: 20px;"
+                                                        src="assets/images/clock.png" alt="" srcset="">
                                                     <p>30 นาที</p>
                                                     <div class="link-btn">
-                                                        <button type="button" class="btn btn-link"><a href="index.php">ดูวิดีโอ</a></button>
+                                                        <button type="button" class="btn btn-link"><a
+                                                                href="course-video.php">ดูวิดีโอ</a></button>
                                                     </div>
                                                 </div>
 
@@ -421,7 +469,8 @@
 
                                                 <div class="group2">
                                                     <div class="link-btn">
-                                                        <button type="button" class="btn btn-link"><a href="index.php">ทำข้อสอบ</a></button>
+                                                        <button type="button" class="btn btn-link"><a
+                                                                href="index.php">ทำข้อสอบ</a></button>
                                                     </div>
                                                 </div>
 
@@ -432,7 +481,8 @@
                                                     <span>บทที่ 3</span>
                                                     <span>ชื่อบทเรียน</span>
                                                 </div>
-                                                <button type="button" class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
+                                                <button type="button"
+                                                    class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
                                             </div>
 
 
@@ -460,10 +510,12 @@
                                                 </div>
 
                                                 <div class="group2">
-                                                    <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                                    <img style="width: 20px; height: 20px;"
+                                                        src="assets/images/clock.png" alt="" srcset="">
                                                     <p>30 นาที</p>
                                                     <div class="link-btn">
-                                                        <button type="button" class="btn btn-link"><a href="index.php">ดูวิดีโอ</a></button>
+                                                        <button type="button" class="btn btn-link"><a
+                                                                href="course-video.php">ดูวิดีโอ</a></button>
                                                     </div>
                                                 </div>
 
@@ -478,22 +530,24 @@
 
                                                 <div class="group2">
                                                     <div class="link-btn">
-                                                        <button type="button" class="btn btn-link"><a href="index.php">ทำข้อสอบ</a></button>
+                                                        <button type="button" class="btn btn-link"><a
+                                                                href="index.php">ทำข้อสอบ</a></button>
                                                     </div>
                                                 </div>
 
                                             </div>
 
-                                             <div class="list-second">
+                                            <div class="list-second">
                                                 <div>
                                                     <span>บทที่ 4</span>
                                                     <span>ชื่อบทเรียน</span>
                                                 </div>
-                                                <button type="button" class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
+                                                <button type="button"
+                                                    class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
                                             </div>
 
 
-                                             <div class="list-course">
+                                            <div class="list-course">
 
                                                 <div class="group1">
                                                     <img src="assets/images/check-true.svg" alt="" srcset="">
@@ -517,10 +571,12 @@
                                                 </div>
 
                                                 <div class="group2">
-                                                    <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                                    <img style="width: 20px; height: 20px;"
+                                                        src="assets/images/clock.png" alt="" srcset="">
                                                     <p>30 นาที</p>
                                                     <div class="link-btn">
-                                                        <button type="button" class="btn btn-link"><a href="index.php">ดูวิดีโอ</a></button>
+                                                        <button type="button" class="btn btn-link"><a
+                                                                href="course-video.php">ดูวิดีโอ</a></button>
                                                     </div>
                                                 </div>
 
@@ -535,7 +591,8 @@
 
                                                 <div class="group2">
                                                     <div class="link-btn">
-                                                        <button type="button" class="btn btn-link"><a href="index.php">ทำข้อสอบ</a></button>
+                                                        <button type="button" class="btn btn-link"><a
+                                                                href="index.php">ทำข้อสอบ</a></button>
                                                     </div>
                                                 </div>
 
@@ -548,7 +605,8 @@
                             </div>
                         </div>
 
-                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab">
 
                             <div class="card-main mb-3">
                                 <img class="w-100" src="assets/images/course2.png" alt="" srcset="">
@@ -608,10 +666,12 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <p class="mb-0">แบบประเมินหลักสูตร</p>
-                                        <div class="wrap-course-clild">
-                                            <img src="assets/images/cer2.png" alt="" srcset="">
-                                            <p class="mx-0">ทำแบบประเมิน</p>
-                                        </div>
+                                        <a href="course-evaluation.php" class="evaluation-link">
+                                            <div class="wrap-course-clild">
+                                                <img src="assets/images/cer2.png" alt="" srcset="">
+                                                <p class="mx-0">ทำแบบประเมิน</p>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -619,17 +679,28 @@
                             <div class="course-tab">
                                 <nav>
                                     <div class="nav nav-tabs" id="nav-tab2" role="tablist">
-                                        <button class="nav-link active" id="course-detail" data-bs-toggle="tab" data-bs-target="#nav5" type="button" role="tab" aria-controls="nav5" aria-selected="true">รายละเอียดหลักสูตร</button>
-                                        <button class="nav-link" id="course-list" data-bs-toggle="tab" data-bs-target="#nav6" type="button" role="tab" aria-controls="nav6" aria-selected="false" tabindex="-1">รายการหลักสูตร</button>
+                                        <button class="nav-link active" id="course-detail" data-bs-toggle="tab"
+                                            data-bs-target="#nav5" type="button" role="tab" aria-controls="nav5"
+                                            aria-selected="true">รายละเอียดหลักสูตร</button>
+                                        <button class="nav-link" id="course-list" data-bs-toggle="tab"
+                                            data-bs-target="#nav6" type="button" role="tab" aria-controls="nav6"
+                                            aria-selected="false" tabindex="-1">รายการหลักสูตร</button>
                                     </div>
                                 </nav>
                                 <div class="tab-content" id="nav-tabContent">
 
-                                    <div class="tab-pane fade show active" id="nav5" role="tabpanel" aria-labelledby="course-detail">
-                                        Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                                    <div class="tab-pane fade show active" id="nav5" role="tabpanel"
+                                        aria-labelledby="course-detail">
+                                        Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen book. It has survived not only five
                                         <br>
                                         <br>
-                                        Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                                        Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen book. It has survived not only five
                                     </div>
 
                                     <div class="tab-pane fade" id="nav6" role="tabpanel" aria-labelledby="course-list">
@@ -639,7 +710,9 @@
                                                     <span>บทที่ 1</span>
                                                     <span>ชื่อบทเรียน</span>
                                                 </div>
-                                                <button type="button" class="btn btn-secondary d-flex"><img width="24px" class="mx-1" src="assets/images/download-doc.png" alt="" srcset="">เอกสารประกอบการเรียน</button>
+                                                <button type="button" class="btn btn-secondary d-flex"><img width="24px"
+                                                        class="mx-1" src="assets/images/download-doc.png" alt=""
+                                                        srcset="">เอกสารประกอบการเรียน</button>
                                             </div>
 
                                             <div class="list-course">
@@ -666,10 +739,12 @@
                                                 </div>
 
                                                 <div class="group2">
-                                                    <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                                    <img style="width: 20px; height: 20px;"
+                                                        src="assets/images/clock.png" alt="" srcset="">
                                                     <p>30 นาที</p>
                                                     <div class="link-btn">
-                                                        <button type="button" class="btn btn-link"><a href="index.php">ดูวิดีโอ</a></button>
+                                                        <button type="button" class="btn btn-link"><a
+                                                                href="course-video.php">ดูวิดีโอ</a></button>
                                                     </div>
                                                 </div>
 
@@ -684,7 +759,8 @@
 
                                                 <div class="group2">
                                                     <div class="link-btn">
-                                                        <button type="button" class="btn btn-link"><a href="index.php">ทำข้อสอบ</a></button>
+                                                        <button type="button" class="btn btn-link"><a
+                                                                href="exam-enter.php">ทำข้อสอบ</a></button>
                                                     </div>
                                                 </div>
 
@@ -695,7 +771,8 @@
                                                     <span>บทที่ 2</span>
                                                     <span>ชื่อบทเรียน</span>
                                                 </div>
-                                                <button type="button" class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
+                                                <button type="button"
+                                                    class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
                                             </div>
 
                                             <div class="list-course">
@@ -715,7 +792,8 @@
                                                     <p>วิดีโอบทที่ 2</p>
                                                 </div>
                                                 <div class="group2">
-                                                    <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                                    <img style="width: 20px; height: 20px;"
+                                                        src="assets/images/clock.png" alt="" srcset="">
                                                     <p>30 นาที</p>
                                                     <img src="assets/images/keylog.svg" alt="" srcset="">
                                                 </div>
@@ -736,7 +814,8 @@
                                                     <span>บทที่ 3</span>
                                                     <span>ชื่อบทเรียน</span>
                                                 </div>
-                                                <button type="button" class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
+                                                <button type="button"
+                                                    class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
                                             </div>
 
                                             <div class="list-course">
@@ -756,7 +835,8 @@
                                                     <p>วิดีโอบทที่ 3</p>
                                                 </div>
                                                 <div class="group2">
-                                                    <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                                    <img style="width: 20px; height: 20px;"
+                                                        src="assets/images/clock.png" alt="" srcset="">
                                                     <p>30 นาที</p>
                                                     <img src="assets/images/keylog.svg" alt="" srcset="">
                                                 </div>
@@ -778,7 +858,8 @@
                                                     <span>บทที่ 4</span>
                                                     <span>ชื่อบทเรียน</span>
                                                 </div>
-                                                <button type="button" class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
+                                                <button type="button"
+                                                    class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
                                             </div>
 
                                             <div class="list-course">
@@ -798,7 +879,8 @@
                                                     <p>วิดีโอบทที่ 4</p>
                                                 </div>
                                                 <div class="group2">
-                                                    <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                                    <img style="width: 20px; height: 20px;"
+                                                        src="assets/images/clock.png" alt="" srcset="">
                                                     <p>30 นาที</p>
                                                     <img src="assets/images/keylog.svg" alt="" srcset="">
                                                 </div>
@@ -823,12 +905,14 @@
 
                         </div>
 
-                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab">
 
                             <div class="card-main mb-3">
                                 <img class="w-100" src="assets/images/course6.jpg" alt="" srcset="">
                                 <div class="card-body">
-                                    <h3>การอบรมระบบบรรจุเครื่องดื่มแบบปลอดเชื้อ (Aseptic Filling System Introduction) </h3>
+                                    <h3>การอบรมระบบบรรจุเครื่องดื่มแบบปลอดเชื้อ (Aseptic Filling System Introduction)
+                                    </h3>
                                     <progress class="progressbar-inp" value="80" max="100"> 80% </progress>
                                     <h5 class="card-title">80 % กำลังเรียน</h5>
                                     <div class="admin-course">
@@ -883,10 +967,12 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <p class="mb-0">แบบประเมินหลักสูตร</p>
-                                        <div class="wrap-course-clild">
-                                            <img src="assets/images/cer2.png" alt="" srcset="">
-                                            <p class="mx-0">ทำแบบประเมิน</p>
-                                        </div>
+                                        <a href="course-evaluation.php" class="evaluation-link">
+                                            <div class="wrap-course-clild">
+                                                <img src="assets/images/cer2.png" alt="" srcset="">
+                                                <p class="mx-0">ทำแบบประเมิน</p>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -894,17 +980,28 @@
                             <div class="course-tab">
                                 <nav>
                                     <div class="nav nav-tabs" id="nav-tab2" role="tablist">
-                                        <button class="nav-link active" id="course-detail" data-bs-toggle="tab" data-bs-target="#nav8" type="button" role="tab" aria-controls="nav8" aria-selected="true">รายละเอียดหลักสูตร</button>
-                                        <button class="nav-link" id="course-list" data-bs-toggle="tab" data-bs-target="#nav9" type="button" role="tab" aria-controls="nav9" aria-selected="false" tabindex="-1">รายการหลักสูตร</button>
+                                        <button class="nav-link active" id="course-detail" data-bs-toggle="tab"
+                                            data-bs-target="#nav8" type="button" role="tab" aria-controls="nav8"
+                                            aria-selected="true">รายละเอียดหลักสูตร</button>
+                                        <button class="nav-link" id="course-list" data-bs-toggle="tab"
+                                            data-bs-target="#nav9" type="button" role="tab" aria-controls="nav9"
+                                            aria-selected="false" tabindex="-1">รายการหลักสูตร</button>
                                     </div>
                                 </nav>
                                 <div class="tab-content" id="nav-tabContent">
 
-                                    <div class="tab-pane fade show active" id="nav8" role="tabpanel" aria-labelledby="course-detail">
-                                        Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                                    <div class="tab-pane fade show active" id="nav8" role="tabpanel"
+                                        aria-labelledby="course-detail">
+                                        Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen book. It has survived not only five
                                         <br>
                                         <br>
-                                        Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                                        Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen book. It has survived not only five
                                     </div>
 
                                     <div class="tab-pane fade" id="nav9" role="tabpanel" aria-labelledby="course-list">
@@ -914,7 +1011,9 @@
                                                     <span>บทที่ 1</span>
                                                     <span>ชื่อบทเรียน</span>
                                                 </div>
-                                                <button type="button" class="btn btn-secondary d-flex"><img width="24px" class="mx-1" src="assets/images/download-doc.png" alt="" srcset="">เอกสารประกอบการเรียน</button>
+                                                <button type="button" class="btn btn-secondary d-flex"><img width="24px"
+                                                        class="mx-1" src="assets/images/download-doc.png" alt=""
+                                                        srcset="">เอกสารประกอบการเรียน</button>
                                             </div>
 
                                             <div class="list-course">
@@ -941,10 +1040,12 @@
                                                 </div>
 
                                                 <div class="group2">
-                                                    <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                                    <img style="width: 20px; height: 20px;"
+                                                        src="assets/images/clock.png" alt="" srcset="">
                                                     <p>30 นาที</p>
                                                     <div class="link-btn">
-                                                        <button type="button" class="btn btn-link"><a href="index.php">ดูวิดีโอ</a></button>
+                                                        <button type="button" class="btn btn-link"><a
+                                                                href="course-video.php">ดูวิดีโอ</a></button>
                                                     </div>
                                                 </div>
 
@@ -959,7 +1060,8 @@
 
                                                 <div class="group2">
                                                     <div class="link-btn">
-                                                        <button type="button" class="btn btn-link"><a href="index.php">ทำข้อสอบ</a></button>
+                                                        <button type="button" class="btn btn-link"><a
+                                                                href="index.php">ทำข้อสอบ</a></button>
                                                     </div>
                                                 </div>
 
@@ -970,7 +1072,8 @@
                                                     <span>บทที่ 2</span>
                                                     <span>ชื่อบทเรียน</span>
                                                 </div>
-                                                <button type="button" class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
+                                                <button type="button"
+                                                    class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
                                             </div>
 
                                             <div class="list-course">
@@ -990,7 +1093,8 @@
                                                     <p>วิดีโอบทที่ 2</p>
                                                 </div>
                                                 <div class="group2">
-                                                    <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                                    <img style="width: 20px; height: 20px;"
+                                                        src="assets/images/clock.png" alt="" srcset="">
                                                     <p>30 นาที</p>
                                                     <img src="assets/images/keylog.svg" alt="" srcset="">
                                                 </div>
@@ -1011,7 +1115,8 @@
                                                     <span>บทที่ 3</span>
                                                     <span>ชื่อบทเรียน</span>
                                                 </div>
-                                                <button type="button" class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
+                                                <button type="button"
+                                                    class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
                                             </div>
 
                                             <div class="list-course">
@@ -1031,7 +1136,8 @@
                                                     <p>วิดีโอบทที่ 3</p>
                                                 </div>
                                                 <div class="group2">
-                                                    <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                                    <img style="width: 20px; height: 20px;"
+                                                        src="assets/images/clock.png" alt="" srcset="">
                                                     <p>30 นาที</p>
                                                     <img src="assets/images/keylog.svg" alt="" srcset="">
                                                 </div>
@@ -1053,7 +1159,8 @@
                                                     <span>บทที่ 4</span>
                                                     <span>ชื่อบทเรียน</span>
                                                 </div>
-                                                <button type="button" class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
+                                                <button type="button"
+                                                    class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
                                             </div>
 
                                             <div class="list-course">
@@ -1073,7 +1180,8 @@
                                                     <p>วิดีโอบทที่ 4</p>
                                                 </div>
                                                 <div class="group2">
-                                                    <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                                    <img style="width: 20px; height: 20px;"
+                                                        src="assets/images/clock.png" alt="" srcset="">
                                                     <p>30 นาที</p>
                                                     <img src="assets/images/keylog.svg" alt="" srcset="">
                                                 </div>
@@ -1098,7 +1206,8 @@
 
                         </div>
 
-                        <div class="tab-pane fade" id="v-pills-messages4" role="tabpanel" aria-labelledby="v-pills-messages4-tab">
+                        <div class="tab-pane fade" id="v-pills-messages4" role="tabpanel"
+                            aria-labelledby="v-pills-messages4-tab">
 
                             <div class="card-main mb-3">
                                 <img class="w-100" src="assets/images/course4.png" alt="" srcset="">
@@ -1159,10 +1268,12 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <p class="mb-0">แบบประเมินหลักสูตร</p>
-                                        <div class="wrap-course-clild">
-                                            <img src="assets/images/cer2.png" alt="" srcset="">
-                                            <p class="mx-0">ทำแบบประเมิน</p>
-                                        </div>
+                                        <a href="course-evaluation.php" class="evaluation-link">
+                                            <div class="wrap-course-clild">
+                                                <img src="assets/images/cer2.png" alt="" srcset="">
+                                                <p class="mx-0">ทำแบบประเมิน</p>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -1170,17 +1281,28 @@
                             <div class="course-tab">
                                 <nav>
                                     <div class="nav nav-tabs" id="nav-tab2" role="tablist">
-                                        <button class="nav-link active" id="course-detail" data-bs-toggle="tab" data-bs-target="#nav10" type="button" role="tab" aria-controls="nav10" aria-selected="true">รายละเอียดหลักสูตร</button>
-                                        <button class="nav-link" id="course-list" data-bs-toggle="tab" data-bs-target="#nav11" type="button" role="tab" aria-controls="nav11" aria-selected="false" tabindex="-1">รายการหลักสูตร</button>
+                                        <button class="nav-link active" id="course-detail" data-bs-toggle="tab"
+                                            data-bs-target="#nav10" type="button" role="tab" aria-controls="nav10"
+                                            aria-selected="true">รายละเอียดหลักสูตร</button>
+                                        <button class="nav-link" id="course-list" data-bs-toggle="tab"
+                                            data-bs-target="#nav11" type="button" role="tab" aria-controls="nav11"
+                                            aria-selected="false" tabindex="-1">รายการหลักสูตร</button>
                                     </div>
                                 </nav>
                                 <div class="tab-content" id="nav-tabContent">
 
-                                    <div class="tab-pane fade show active" id="nav10" role="tabpanel" aria-labelledby="course-detail">
-                                        Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                                    <div class="tab-pane fade show active" id="nav10" role="tabpanel"
+                                        aria-labelledby="course-detail">
+                                        Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen book. It has survived not only five
                                         <br>
                                         <br>
-                                        Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                                        Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen book. It has survived not only five
                                     </div>
 
                                     <div class="tab-pane fade" id="nav11" role="tabpanel" aria-labelledby="course-list">
@@ -1190,7 +1312,9 @@
                                                     <span>บทที่ 1</span>
                                                     <span>ชื่อบทเรียน</span>
                                                 </div>
-                                                <button type="button" class="btn btn-secondary d-flex"><img width="24px" class="mx-1" src="assets/images/download-doc.png" alt="" srcset="">เอกสารประกอบการเรียน</button>
+                                                <button type="button" class="btn btn-secondary d-flex"><img width="24px"
+                                                        class="mx-1" src="assets/images/download-doc.png" alt=""
+                                                        srcset="">เอกสารประกอบการเรียน</button>
                                             </div>
 
                                             <div class="list-course">
@@ -1217,10 +1341,12 @@
                                                 </div>
 
                                                 <div class="group2">
-                                                    <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                                    <img style="width: 20px; height: 20px;"
+                                                        src="assets/images/clock.png" alt="" srcset="">
                                                     <p>30 นาที</p>
                                                     <div class="link-btn">
-                                                        <button type="button" class="btn btn-link"><a href="index.php">ดูวิดีโอ</a></button>
+                                                        <button type="button" class="btn btn-link"><a
+                                                                href="course-video.php">ดูวิดีโอ</a></button>
                                                     </div>
                                                 </div>
 
@@ -1235,7 +1361,8 @@
 
                                                 <div class="group2">
                                                     <div class="link-btn">
-                                                        <button type="button" class="btn btn-link"><a href="index.php">ทำข้อสอบ</a></button>
+                                                        <button type="button" class="btn btn-link"><a
+                                                                href="index.php">ทำข้อสอบ</a></button>
                                                     </div>
                                                 </div>
 
@@ -1246,7 +1373,8 @@
                                                     <span>บทที่ 2</span>
                                                     <span>ชื่อบทเรียน</span>
                                                 </div>
-                                                <button type="button" class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
+                                                <button type="button"
+                                                    class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
                                             </div>
 
                                             <div class="list-course">
@@ -1266,7 +1394,8 @@
                                                     <p>วิดีโอบทที่ 2</p>
                                                 </div>
                                                 <div class="group2">
-                                                    <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                                    <img style="width: 20px; height: 20px;"
+                                                        src="assets/images/clock.png" alt="" srcset="">
                                                     <p>30 นาที</p>
                                                     <img src="assets/images/keylog.svg" alt="" srcset="">
                                                 </div>
@@ -1287,7 +1416,8 @@
                                                     <span>บทที่ 3</span>
                                                     <span>ชื่อบทเรียน</span>
                                                 </div>
-                                                <button type="button" class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
+                                                <button type="button"
+                                                    class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
                                             </div>
 
                                             <div class="list-course">
@@ -1307,7 +1437,8 @@
                                                     <p>วิดีโอบทที่ 4</p>
                                                 </div>
                                                 <div class="group2">
-                                                    <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                                    <img style="width: 20px; height: 20px;"
+                                                        src="assets/images/clock.png" alt="" srcset="">
                                                     <p>30 นาที</p>
                                                     <img src="assets/images/keylog.svg" alt="" srcset="">
                                                 </div>
@@ -1329,7 +1460,8 @@
                                                     <span>บทที่ 4</span>
                                                     <span>ชื่อบทเรียน</span>
                                                 </div>
-                                                <button type="button" class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
+                                                <button type="button"
+                                                    class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
                                             </div>
 
                                             <div class="list-course">
@@ -1349,7 +1481,8 @@
                                                     <p>วิดีโอบทที่ 4</p>
                                                 </div>
                                                 <div class="group2">
-                                                    <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                                    <img style="width: 20px; height: 20px;"
+                                                        src="assets/images/clock.png" alt="" srcset="">
                                                     <p>30 นาที</p>
                                                     <img src="assets/images/keylog.svg" alt="" srcset="">
                                                 </div>
@@ -1374,7 +1507,8 @@
 
                         </div>
 
-                        <div class="tab-pane fade" id="v-pills-messages5" role="tabpanel" aria-labelledby="v-pills-messages5-tab">
+                        <div class="tab-pane fade" id="v-pills-messages5" role="tabpanel"
+                            aria-labelledby="v-pills-messages5-tab">
 
                             <div class="card-main mb-3">
                                 <img class="w-100" src="assets/images/course5.png" alt="" srcset="">
@@ -1434,10 +1568,12 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <p class="mb-0">แบบประเมินหลักสูตร</p>
-                                        <div class="wrap-course-clild">
-                                            <img src="assets/images/cer2.png" alt="" srcset="">
-                                            <p class="mx-0">ทำแบบประเมิน</p>
-                                        </div>
+                                        <a href="course-evaluation.php" class="evaluation-link">
+                                            <div class="wrap-course-clild">
+                                                <img src="assets/images/cer2.png" alt="" srcset="">
+                                                <p class="mx-0">ทำแบบประเมิน</p>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -1445,17 +1581,28 @@
                             <div class="course-tab">
                                 <nav>
                                     <div class="nav nav-tabs" id="nav-tab2" role="tablist">
-                                        <button class="nav-link active" id="course-detail" data-bs-toggle="tab" data-bs-target="#nav12" type="button" role="tab" aria-controls="nav12" aria-selected="true">รายละเอียดหลักสูตร</button>
-                                        <button class="nav-link" id="course-list" data-bs-toggle="tab" data-bs-target="#nav13" type="button" role="tab" aria-controls="nav13" aria-selected="false" tabindex="-1">รายการหลักสูตร</button>
+                                        <button class="nav-link active" id="course-detail" data-bs-toggle="tab"
+                                            data-bs-target="#nav12" type="button" role="tab" aria-controls="nav12"
+                                            aria-selected="true">รายละเอียดหลักสูตร</button>
+                                        <button class="nav-link" id="course-list" data-bs-toggle="tab"
+                                            data-bs-target="#nav13" type="button" role="tab" aria-controls="nav13"
+                                            aria-selected="false" tabindex="-1">รายการหลักสูตร</button>
                                     </div>
                                 </nav>
                                 <div class="tab-content" id="nav-tabContent">
 
-                                    <div class="tab-pane fade show active" id="nav12" role="tabpanel" aria-labelledby="course-detail">
-                                        Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                                    <div class="tab-pane fade show active" id="nav12" role="tabpanel"
+                                        aria-labelledby="course-detail">
+                                        Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen book. It has survived not only five
                                         <br>
                                         <br>
-                                        Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                                        Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen book. It has survived not only five
                                     </div>
 
                                     <div class="tab-pane fade" id="nav13" role="tabpanel" aria-labelledby="course-list">
@@ -1465,7 +1612,9 @@
                                                     <span>บทที่ 1</span>
                                                     <span>ชื่อบทเรียน</span>
                                                 </div>
-                                                <button type="button" class="btn btn-secondary d-flex"><img width="24px" class="mx-1" src="assets/images/download-doc.png" alt="" srcset="">เอกสารประกอบการเรียน</button>
+                                                <button type="button" class="btn btn-secondary d-flex"><img width="24px"
+                                                        class="mx-1" src="assets/images/download-doc.png" alt=""
+                                                        srcset="">เอกสารประกอบการเรียน</button>
                                             </div>
 
                                             <div class="list-course">
@@ -1492,10 +1641,12 @@
                                                 </div>
 
                                                 <div class="group2">
-                                                    <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                                    <img style="width: 20px; height: 20px;"
+                                                        src="assets/images/clock.png" alt="" srcset="">
                                                     <p>30 นาที</p>
                                                     <div class="link-btn">
-                                                        <button type="button" class="btn btn-link"><a href="index.php">ดูวิดีโอ</a></button>
+                                                        <button type="button" class="btn btn-link"><a
+                                                                href="course-video.php">ดูวิดีโอ</a></button>
                                                     </div>
                                                 </div>
 
@@ -1510,7 +1661,8 @@
 
                                                 <div class="group2">
                                                     <div class="link-btn">
-                                                        <button type="button" class="btn btn-link"><a href="index.php">ทำข้อสอบ</a></button>
+                                                        <button type="button" class="btn btn-link"><a
+                                                                href="index.php">ทำข้อสอบ</a></button>
                                                     </div>
                                                 </div>
 
@@ -1521,7 +1673,8 @@
                                                     <span>บทที่ 2</span>
                                                     <span>ชื่อบทเรียน</span>
                                                 </div>
-                                                <button type="button" class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
+                                                <button type="button"
+                                                    class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
                                             </div>
 
                                             <div class="list-course">
@@ -1541,7 +1694,8 @@
                                                     <p>วิดีโอบทที่ 2</p>
                                                 </div>
                                                 <div class="group2">
-                                                    <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                                    <img style="width: 20px; height: 20px;"
+                                                        src="assets/images/clock.png" alt="" srcset="">
                                                     <p>30 นาที</p>
                                                     <img src="assets/images/keylog.svg" alt="" srcset="">
                                                 </div>
@@ -1562,7 +1716,8 @@
                                                     <span>บทที่ 3</span>
                                                     <span>ชื่อบทเรียน</span>
                                                 </div>
-                                                <button type="button" class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
+                                                <button type="button"
+                                                    class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
                                             </div>
 
                                             <div class="list-course">
@@ -1582,7 +1737,8 @@
                                                     <p>วิดีโอบทที่ 4</p>
                                                 </div>
                                                 <div class="group2">
-                                                    <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                                    <img style="width: 20px; height: 20px;"
+                                                        src="assets/images/clock.png" alt="" srcset="">
                                                     <p>30 นาที</p>
                                                     <img src="assets/images/keylog.svg" alt="" srcset="">
                                                 </div>
@@ -1604,7 +1760,8 @@
                                                     <span>บทที่ 4</span>
                                                     <span>ชื่อบทเรียน</span>
                                                 </div>
-                                                <button type="button" class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
+                                                <button type="button"
+                                                    class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
                                             </div>
 
                                             <div class="list-course">
@@ -1624,7 +1781,8 @@
                                                     <p>วิดีโอบทที่ 4</p>
                                                 </div>
                                                 <div class="group2">
-                                                    <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                                    <img style="width: 20px; height: 20px;"
+                                                        src="assets/images/clock.png" alt="" srcset="">
                                                     <p>30 นาที</p>
                                                     <img src="assets/images/keylog.svg" alt="" srcset="">
                                                 </div>
@@ -1694,10 +1852,12 @@
                             </div>
                             <div class="col-lg-6">
                                 <p class="mb-0">แบบประเมินหลักสูตร</p>
-                                <div class="wrap-course-clild">
-                                    <img src="assets/images/cer2.png" alt="" srcset="">
-                                    <p class="mx-0">ทำแบบประเมิน</p>
-                                </div>
+                                <a href="course-evaluation.php" class="evaluation-link">
+                                    <div class="wrap-course-clild">
+                                        <img src="assets/images/cer2.png" alt="" srcset="">
+                                        <p class="mx-0">ทำแบบประเมิน</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1711,17 +1871,28 @@
                     <div class="course-tab">
                         <nav>
                             <div class="nav nav-tabs" id="tabcourse" role="tablist">
-                                <button class="nav-link active" id="course-detail" data-bs-toggle="tab" data-bs-target="#nav1" type="button" role="tab" aria-controls="nav1" aria-selected="true">รายละเอียดหลักสูตร</button>
-                                <button class="nav-link" id="course-list" data-bs-toggle="tab" data-bs-target="#nav2" type="button" role="tab" aria-controls="nav2" aria-selected="false" tabindex="-1">รายการหลักสูตร</button>
+                                <button class="nav-link active" id="course-detail" data-bs-toggle="tab"
+                                    data-bs-target="#nav1" type="button" role="tab" aria-controls="nav1"
+                                    aria-selected="true">รายละเอียดหลักสูตร</button>
+                                <button class="nav-link" id="course-list" data-bs-toggle="tab" data-bs-target="#nav2"
+                                    type="button" role="tab" aria-controls="nav2" aria-selected="false"
+                                    tabindex="-1">รายการหลักสูตร</button>
                             </div>
                         </nav>
                         <div class="tab-content" id="nav-tabContent">
 
-                            <div class="tab-pane fade show active" id="nav1" role="tabpanel" aria-labelledby="course-detail">
-                                Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            <div class="tab-pane fade show active" id="nav1" role="tabpanel"
+                                aria-labelledby="course-detail">
+                                Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five
                                 <br>
                                 <br>
-                                Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                                Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five
                             </div>
 
                             <div class="tab-pane fade" id="nav2" role="tabpanel" aria-labelledby="course-list">
@@ -1731,7 +1902,9 @@
                                             <span>บทที่ 1</span>
                                             <span>ชื่อบทเรียน</span>
                                         </div>
-                                        <button type="button" class="btn btn-secondary d-flex"><img width="24px" class="mx-1" src="assets/images/download-doc.png" alt="" srcset="">เอกสารประกอบการเรียน</button>
+                                        <button type="button" class="btn btn-secondary d-flex"><img width="24px"
+                                                class="mx-1" src="assets/images/download-doc.png" alt=""
+                                                srcset="">เอกสารประกอบการเรียน</button>
                                     </div>
 
                                     <div class="list-course">
@@ -1758,10 +1931,12 @@
                                         </div>
 
                                         <div class="group2">
-                                            <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                            <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt=""
+                                                srcset="">
                                             <p>30 นาที</p>
                                             <div class="link-btn">
-                                                <button type="button" class="btn btn-link"><a href="index.php">ดูวิดีโอ</a></button>
+                                                <button type="button" class="btn btn-link"><a
+                                                        href="course-video.php">ดูวิดีโอ</a></button>
                                             </div>
                                         </div>
 
@@ -1776,7 +1951,8 @@
 
                                         <div class="group2">
                                             <div class="link-btn">
-                                                <button type="button" class="btn btn-link"><a href="index.php">ทำข้อสอบ</a></button>
+                                                <button type="button" class="btn btn-link"><a
+                                                        href="index.php">ทำข้อสอบ</a></button>
                                             </div>
                                         </div>
 
@@ -1787,7 +1963,8 @@
                                             <span>บทที่ 2</span>
                                             <span>ชื่อบทเรียน</span>
                                         </div>
-                                        <button type="button" class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
+                                        <button type="button"
+                                            class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
                                     </div>
 
                                     <div class="list-course">
@@ -1807,7 +1984,8 @@
                                             <p>วิดีโอบทที่ 2</p>
                                         </div>
                                         <div class="group2">
-                                            <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                            <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt=""
+                                                srcset="">
                                             <p>30 นาที</p>
                                             <img src="assets/images/keylog.svg" alt="" srcset="">
                                         </div>
@@ -1828,7 +2006,8 @@
                                             <span>บทที่ 3</span>
                                             <span>ชื่อบทเรียน</span>
                                         </div>
-                                        <button type="button" class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
+                                        <button type="button"
+                                            class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
                                     </div>
 
                                     <div class="list-course">
@@ -1848,7 +2027,8 @@
                                             <p>วิดีโอบทที่ 4</p>
                                         </div>
                                         <div class="group2">
-                                            <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                            <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt=""
+                                                srcset="">
                                             <p>30 นาที</p>
                                             <img src="assets/images/keylog.svg" alt="" srcset="">
                                         </div>
@@ -1870,7 +2050,8 @@
                                             <span>บทที่ 4</span>
                                             <span>ชื่อบทเรียน</span>
                                         </div>
-                                        <button type="button" class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
+                                        <button type="button"
+                                            class="btn btn-secondary bg-white d-flex">ไม่มีเอกสารประกอบ</button>
                                     </div>
 
                                     <div class="list-course">
@@ -1890,7 +2071,8 @@
                                             <p>วิดีโอบทที่ 4</p>
                                         </div>
                                         <div class="group2">
-                                            <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt="" srcset="">
+                                            <img style="width: 20px; height: 20px;" src="assets/images/clock.png" alt=""
+                                                srcset="">
                                             <p>30 นาที</p>
                                             <img src="assets/images/keylog.svg" alt="" srcset="">
                                         </div>
@@ -1949,12 +2131,12 @@
 <script>
     const text = document.getElementById("titleText");
 
-    document.getElementById("btn1").addEventListener("click", function() {
+    document.getElementById("btn1").addEventListener("click", function () {
         text.innerHTML = "การผลิต บรรจุภัณฑ์พลาสติก <br> ผลิตภัณฑ์เครื่องดื่ม การวิจัยและพัฒนา";
 
     });
 
-    document.getElementById("btn2").addEventListener("click", function() {
+    document.getElementById("btn2").addEventListener("click", function () {
         text.innerHTML = "ผลิตภัณฑ์เครื่องดื่ม การวิจัยและพัฒนา";
     });
 </script>
