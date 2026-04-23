@@ -44,7 +44,7 @@
             </div>
         </div>
         <div>
-            <a href="exam-new.php" class="btn text-light px-5" style="background-color: #1F7BCC;">TEST</a>
+            <a href="exam.php" class="btn text-light px-5" style="background-color: #1F7BCC;">TEST</a>
         </div>
 
     </div>
