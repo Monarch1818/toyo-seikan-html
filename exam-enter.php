@@ -9,7 +9,7 @@
 <main class="exam-enter-page-style p-sm-5 p-2">
     <div class="d-flex justify-content-between mb-5">
         <div>
-            <a href="#" class="btn text-light" style="background-color: #1F7BCC;">Back</a>
+            <a href="course-main.php" class="btn text-light" style="background-color: #1F7BCC;">Back</a>
         </div>
         <div>
             <nav aria-label="breadcrumb">
