@@ -108,8 +108,9 @@
             <!-- Button -->
             <button type="button"
                 class="btn w-100 text-white fw-bold"
-                style="background-color:#1F7BCC;  margin-top:20px; border-radius:5px; height:50px;">
-                ยืนยันลงทะเบียน
+                style="background-color:#1F7BCC;  margin-top:20px; border-radius:5px; height:50px;"
+                onclick="window.location.href='Home.php'">
+                เข้าสู่ระบบ
             </button>
 
             <!-- Divider -->
