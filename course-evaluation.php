@@ -18,7 +18,7 @@
             </nav>
         </div>
     </div>
-    <div class="p-lg-5">
+    <form class="p-lg-5" method="post">
         <h5 class="text-primary">>> แบบประเมินความพึงพอใจหลักสูตร</h5>
         <div class="table-responsive">
             <table class="table table-bordered text-center">
@@ -162,13 +162,13 @@
         <div class="card mb-3">
             <div class="card-body">
                 <h4 class="card-title">ความคิดเห็นหรือข้อเสนอแนะ</h4>
-                <textarea name="" rows="5" class="form-control" placeholder="เขียนความคิดเห็นของคุณ"></textarea>
+                <textarea name="comment" rows="5" class="form-control" placeholder="เขียนความคิดเห็นของคุณ"></textarea>
             </div>
         </div>
         <div class="text-center">
-            <button type="button" class="btn px-5 text-light" style="background-color: #1F7BCC;">ส่ง</button>
+            <button type="submit" class="btn px-5 text-light" style="background-color: #1F7BCC;">ส่ง</button>
         </div>
-    </div>
+    </form>
 
 </main>
 

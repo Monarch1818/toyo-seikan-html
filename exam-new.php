@@ -50,7 +50,7 @@
                 <?php endif ?>
             <?php endfor ?>
         </div>
-        <form id="questionsForm">
+        <form id="questionsForm" method="post">
             <div id="questions">
                 <?php for ($i = 1; $i <= 10; $i++): ?>
                     <div class="collapse <?php if ($i == 3)
@@ -63,28 +63,28 @@
                         <div class="px-md-5 py-md-3 fs-5">
                             <div class="form-check position-relative ps-0">
                                 <input class="form-check-input position-absolute" style="left: 20px; top: 1px;" type="radio"
-                                    name="answers" id="answer1">
+                                    name="answer<?php echo $i ?>" id="answer1">
                                 <label class="form-check-label border border-2 w-100 ps-3" for="answer1">
                                     1. Lorem ipsum dolor sit amet.
                                 </label>
                             </div>
                             <div class="form-check  position-relative ps-0">
                                 <input class="form-check-input position-absolute" style="left: 20px; top: 1px;" type="radio"
-                                    name="answers" id="answer2">
+                                    name="answer<?php echo $i ?>" id="answer2">
                                 <label class="form-check-label border border-2 w-100 ps-3" for="answer2">
                                     2. Lorem, ipsum dolor.
                                 </label>
                             </div>
                             <div class="form-check  position-relative ps-0">
                                 <input class="form-check-input position-absolute" style="left: 20px; top: 1px;" type="radio"
-                                    name="answers" id="answer3">
+                                    name="answer<?php echo $i ?>" id="answer3">
                                 <label class="form-check-label border border-2 w-100 ps-3" for="answer3">
                                     3. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                 </label>
                             </div>
                             <div class="form-check position-relative ps-0">
                                 <input class="form-check-input position-absolute" style="left: 20px; top: 1px;" type="radio"
-                                    name="answers" id="answer4">
+                                    name="answer<?php echo $i ?>" id="answer4">
                                 <label class="form-check-label border border-2 w-100 ps-3" for="answer4">
                                     4. Lorem ipsum dolor sit amet consectetur adipisicing.
                                 </label>
@@ -144,7 +144,7 @@
 
         await delay(2000); //สมมุตว่ากำลังส่งข้อมูล
 
-        const randomResponse = Math.random() < 0.5; //สุ่มว่าจะสำเร็จหรือไม่
+        const randomResponse = Math.random() < 0.75; //สุ่มว่าจะสำเร็จหรือไม่
 
         console.log(randomResponse)
 
