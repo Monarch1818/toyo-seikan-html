@@ -285,6 +285,21 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups mx-20px">
+                    <div class="btn-group me-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-outline-dark custom-btn">1</button>
+                    </div>
+                    <div class="btn-group me-2" role="group" aria-label="Second group">
+                        <button type="button" class="btn btn-outline-dark custom-btn">2</button>
+                    </div>
+                    <div class="btn-group me-2" role="group" aria-label="Next group">
+                        <button type="button" class="btn btn-outline-dark custom-btn">หน้าถัดไป ></button>
+                    </div>
+                    <div class="btn-group " role="group" aria-label="Nextend group">
+                        <button type="button" class="btn btn-outline-dark custom-btn">หน้าสุดท้าย >></button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
