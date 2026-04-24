@@ -420,22 +420,22 @@
             </div>
 
             <div class="col-8 d-flex justify-content-between">
-                <div class="menu-card pink">
+                <div class="menu-card pink" onclick="window.location.href='course-detail.php'">
                     <img src="assets/images/online-test.png">
                     <p>หลักสูตรของฉัน</p>
                 </div>
 
-                <div class="menu-card blue">
+                <div class="menu-card blue" onclick="window.location.href='download.php'">
                     <img src="assets/images/attachment.png">
                     <p>เอกสารดาวน์โหลด</p>
                 </div>
 
-                <div class="menu-card orange">
+                <div class="menu-card orange" onclick="window.location.href='Usage.php'">
                     <img src="assets/images/user-guide.png">
                     <p>วิธีการใช้งาน</p>
                 </div>
 
-                <div class="menu-card green">
+                <div class="menu-card green" onclick="window.location.href='Status.php'">
                     <img src="assets/images/check-list.png">
                     <p>สถานะการเรียน</p>
                 </div>
@@ -640,7 +640,8 @@
         </div>
         <div class="d-flex align-items-center justify-content-between course-header">
             <h2 class="mb-0 title">ข่าวประชาสัมพันธ์</h2>
-            <button type="button" class="btn btn-dark rounded-pill px-4 py-2">
+            <button type="button" class="btn btn-dark rounded-pill px-4 py-2"
+                onclick="window.location.href='News.php'">
                 ดูทั้งหมด
             </button>
         </div>
@@ -720,13 +721,16 @@
                 </p>
                 <div class="buttons">
                     <button class="btn btn-primary btn-explore">Explore Courses</button>
-                    <button class="btn btn-outline-dark" style="border-radius: 50px;">Contact Us</button>
+                    <button class="btn btn-outline-dark" style="border-radius: 50px;"
+                        onclick="window.location.href='Contact.php'">Contact Us</button>
                 </div>
             </div>
         </div>
         <div class="d-flex align-items-center justify-content-between course-header">
             <h2 class="mb-0 title">วิดีโอแนะนำ</h2>
-            <button type="button" class="btn btn-dark rounded-pill px-4 py-2">
+            <button type="button" class="btn btn-dark rounded-pill px-4 py-2"
+                onclick="window.location.href='Video.php'">
+
                 ดูทั้งหมด
             </button>
         </div>
@@ -826,7 +830,8 @@
             </div>
         </div>
         <div class="text-center mt-4">
-            <button type="button" class="btn btn-dark rounded-pill px-4 py-2">
+            <button type="button" class="btn btn-dark rounded-pill px-4 py-2"
+                onclick="window.location.href='Faq.php'">
                 ดูทั้งหมด
             </button>
         </div>
