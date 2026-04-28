@@ -4,13 +4,13 @@ include "includes/header.php" ?>
 
 <main class="p-sm-5 p-1">
     <h1 class="text-center">ติดต่อเรา</h1>
-    <div class="row g-sm-5 g-1">
+    <div class="row g-sm-5 g-1 align-items-stretch">
         <div class="col-lg-6 col-12">
-            <img src="assets/images/toyo-seikan-pic.png" alt="" class="img-fluid w-100 h-100"
+            <img src="assets/images/toyo-seikan-pic.png" alt="" class="img-fluid w-100 h-100 object-fit-cover"
                 style="max-height: 400px;">
         </div>
         <div class="col-lg-6 col-12">
-            <div class="card px-5 pt-5">
+            <div class="card px-5 pt-5 h-100">
                 <div class="card-body d-flex flex-column gap-3">
                     <div class="d-flex flex-row gap-2">
                         <div class="d-flex align-items-center">
