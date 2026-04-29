@@ -63,66 +63,78 @@
         <div class="container">
             <div class="row ">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                    <div class="cardnews">
-                        <img src="https://cdn.pixabay.com/photo/2026/03/03/10/12/tylijura-car-10153221_1280.jpg">
-                        <div class="card-body">
-                            <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                            <p><i class="bi bi-calendar4"></i> 10 เมษายน 2564</p>
-                            <small>Name What is Lorem Ipsum</small>
+                    <a href="News-detail.php">
+                        <div class="cardnews">
+                            <img src="https://cdn.pixabay.com/photo/2026/03/03/10/12/tylijura-car-10153221_1280.jpg">
+                            <div class="card-body">
+                                <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                <p><i class="bi bi-calendar4"></i> 10 เมษายน 2564</p>
+                                <small>Name What is Lorem Ipsum</small>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                    <div class="cardnews">
-                        <img src="https://cdn.pixabay.com/photo/2026/03/03/10/12/tylijura-car-10153221_1280.jpg">
-                        <div class="card-body">
-                            <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                            <p><i class="bi bi-calendar4"></i> 10 เมษายน 2564</p>
-                            <small>Name What is Lorem Ipsum</small>
+                    <a href="News-detail.php">
+                        <div class="cardnews">
+                            <img src="https://cdn.pixabay.com/photo/2026/03/03/10/12/tylijura-car-10153221_1280.jpg">
+                            <div class="card-body">
+                                <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                <p><i class="bi bi-calendar4"></i> 10 เมษายน 2564</p>
+                                <small>Name What is Lorem Ipsum</small>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                    <div class="cardnews">
-                        <img src="https://cdn.pixabay.com/photo/2026/03/03/10/12/tylijura-car-10153221_1280.jpg">
-                        <div class="card-body">
-                            <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                            <p><i class="bi bi-calendar4"></i> 10 เมษายน 2564</p>
-                            <small>Name What is Lorem Ipsum</small>
+                    <a href="News-detail.php">
+                        <div class="cardnews">
+                            <img src="https://cdn.pixabay.com/photo/2026/03/03/10/12/tylijura-car-10153221_1280.jpg">
+                            <div class="card-body">
+                                <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                <p><i class="bi bi-calendar4"></i> 10 เมษายน 2564</p>
+                                <small>Name What is Lorem Ipsum</small>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                    <div class="cardnews">
-                        <img src="https://cdn.pixabay.com/photo/2026/03/03/10/12/tylijura-car-10153221_1280.jpg">
-                        <div class="card-body">
-                            <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                            <p><i class="bi bi-calendar4"></i> 10 เมษายน 2564</p>
-                            <small>Name What is Lorem Ipsum</small>
+                    <a href="News-detail.php">
+                        <div class="cardnews">
+                            <img src="https://cdn.pixabay.com/photo/2026/03/03/10/12/tylijura-car-10153221_1280.jpg">
+                            <div class="card-body">
+                                <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                <p><i class="bi bi-calendar4"></i> 10 เมษายน 2564</p>
+                                <small>Name What is Lorem Ipsum</small>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                    <div class="cardnews">
-                        <img src="https://cdn.pixabay.com/photo/2026/03/03/10/12/tylijura-car-10153221_1280.jpg">
-                        <div class="card-body">
-                            <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                            <p><i class="bi bi-calendar4"></i> 10 เมษายน 2564</p>
-                            <small>Name What is Lorem Ipsum</small>
+                    <a href="News-detail.php">
+                        <div class="cardnews">
+                            <img src="https://cdn.pixabay.com/photo/2026/03/03/10/12/tylijura-car-10153221_1280.jpg">
+                            <div class="card-body">
+                                <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                <p><i class="bi bi-calendar4"></i> 10 เมษายน 2564</p>
+                                <small>Name What is Lorem Ipsum</small>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                    <div class="cardnews">
-                        <img src="https://cdn.pixabay.com/photo/2026/03/03/10/12/tylijura-car-10153221_1280.jpg">
-                        <div class="card-body">
-                            <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                            <p><i class="bi bi-calendar4"></i> 10 เมษายน 2564</p>
-                            <small>Name What is Lorem Ipsum</small>
+                    <a href="News-detail.php">
+                        <div class="cardnews">
+                            <img src="https://cdn.pixabay.com/photo/2026/03/03/10/12/tylijura-car-10153221_1280.jpg">
+                            <div class="card-body">
+                                <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                <p><i class="bi bi-calendar4"></i> 10 เมษายน 2564</p>
+                                <small>Name What is Lorem Ipsum</small>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
