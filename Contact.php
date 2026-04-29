@@ -30,7 +30,7 @@
         }
 
         .contact-box {
-            margin-bottom: 50px;
+            margin-bottom: 20px;
             background-color: #f9f7f7;
             border-radius: 5px;
             padding: 30px;
