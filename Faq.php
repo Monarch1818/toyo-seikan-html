@@ -3,7 +3,6 @@
 <style>
     .container-faq {
 
-
         .accordion {
             width: 60%;
             margin: auto;
@@ -11,7 +10,6 @@
 
         h4 {
             margin-left: 5%;
-            margin-top: 2%;
         }
 
         h3 {
