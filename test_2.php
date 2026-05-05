@@ -18,13 +18,64 @@
   .radio-container input {
     margin-right: 15px;
   }
+
+  
 </style>
 
 <script>
 function showCompleted() {
     var myModal = new bootstrap.Modal(document.getElementById('completedModal'));
     myModal.show();
+    
 }
+let currentQuestion = 1; 
+    let totalQuestions = 10;
+    // Set สำหรับเก็บหมายเลขข้อที่ทำเสร็จแล้ว
+    let completedQuestions = new Set(); 
+
+    function updatePagination() {
+        const table = document.getElementById('question-table');
+        const tds = table.querySelectorAll('td');
+
+        tds.forEach((td, index) => {
+            let questionNum = index + 1;
+            td.classList.remove('bg-primary', 'bg-success', 'text-white');
+            if (questionNum === currentQuestion && questionNum !== 10) {
+                td.classList.add('bg-primary', 'text-white');
+            } else if (completedQuestions.has(questionNum)) {
+                td.classList.add('bg-success', 'text-white');
+            }else if (currentQuestion === 10) {
+                td.classList.add('bg-success', 'text-white');
+            }
+        });
+    }
+
+    function nextQuestion() {
+        if (currentQuestion < totalQuestions) {
+            completedQuestions.add(currentQuestion);
+            currentQuestion++;
+            updatePagination();
+        }
+    }
+
+    function prevQuestion() {
+        if (currentQuestion > 1) {
+            currentQuestion--;
+            updatePagination();
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const tds = document.querySelectorAll('#question-table td');
+        tds.forEach((td, index) => {
+            td.style.cursor = 'pointer';
+            td.addEventListener('click', () => {
+                completedQuestions.add(currentQuestion);
+                currentQuestion = index + 1;
+                updatePagination();
+            });
+        });
+    });
 </script>
 <main class="container flex-grow-1 py-4 min-vh-100">
     <div class=" d-flex justify-content-between mb-4">
@@ -51,10 +102,10 @@ function showCompleted() {
         <p class="leading">0/10</p>
     </div>
     <hr class="w-100"></hr>
-    <table class="table table-bordered mb-2">
+    <table class="table table-bordered mb-2" id="question-table">
             <tbody>
                 <tr class="text-center">
-                    <td >1</td>
+                    <td class="bg-primary text-white">1</td>
                     <td>2</td>
                     <td>3</td>
                     <td>4</td>
@@ -89,7 +140,8 @@ function showCompleted() {
         <span>Lorem Ipsum 4</span>
     </label>
     <div class="d-flex justify-content-center mb-2">
-        <button type="button" class="btn btn-light text-primary border-primary me-2">Previous</button>
+        <button type="button" class="btn btn-light text-primary border-primary me-2" onclick="prevQuestion()">Previous</button>
+        <button type="button" class="btn btn-primary me-2" onclick="nextQuestion()">Next</button>
         <button type="button" class="btn btn-success" onclick="showCompleted()">Send</button>
     </div>
     <!-- Modal : completed -->
