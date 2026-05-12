@@ -1,661 +1,835 @@
-<?php $css = "css/home.css";
-include "includes/header.php" ?>
+<!DOCTYPE html>
+<html lang="th">
 
-<style>
-    .home_page_style {
-        .logo-banner {
-            width: 33%;
-            margin-bottom: 2%;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyo seikan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <?php include 'includes/header.php'; ?>
+
+
+    <style>
+        .stepbanner {
+            position: relative;
         }
 
-        .services-menu {
-            img {
-                margin-left: 5%;
-                margin-top: 5%;
-                width: 30%;
-            }
-
-            .course-menu {
-                background-color: #FDE7EB;
-            }
-
-            .document-menu {
-                background-color: #E2F0FF;
-            }
-
-            .guild-menu {
-                background-color: #FFEFE1;
-            }
-
-            .status-menu {
-                background-color: #E4F6DF;
-            }
+        .banner-img {
+            width: 100%;
         }
 
-        .our-course {
+        .logo {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 400px;
+        }
+
+        .container-menu {
+            margin-top: 20px;
+        }
+
+        .menu-title {
+            font-size: 70px;
+            font-weight: bold;
+            margin-left: 50px;
+        }
+
+        .menu-title span {
+            color: #2F80ED;
+        }
+
+        .menu-card {
+            width: 170px;
+            height: 120px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-card img {
+            margin-right: 60px;
+            width: 40px;
+            margin-bottom: 8px;
+        }
+
+        .menu-card p {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .pink {
+            background-color: #FDE7EB;
+        }
+
+        .blue {
+            background-color: #E2F0FF;
+        }
+
+        .orange {
+            background-color: #FFEFE1;
+        }
+
+        .green {
+            background-color: #E4F6DF;
+        }
+
+        .card-title {
+            margin-left: 10px;
+        }
+
+        .card-img-top {
+            display: block;
+            width: 100%;
+            height: auto;
+            padding: 10px 20px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .course-container {
             background-color: #F7F7F7;
-
-            .our-course-header {
-                display: flex;
-                justify-content: space-between;
-
-                h1 {
-                    border-bottom: 5px #1F7BCC solid;
-                    padding-bottom: 5px;
-                }
-            }
-
-            .card {
-                background-color: white;
-
-                .card-top {
-                    span {
-                        margin-top: 2%;
-                        margin-left: 2%;
-                    }
-
-                    img {
-                        max-height: 250px;
-                    }
-                }
-
-                span {
-                    color: black;
-                }
-
-                .avatar img {
-                    width: 40px;
-                }
-            }
+            padding: 20px;
         }
 
-        .our-announcement {
-            .our-announcement-header {
-                display: flex;
-                justify-content: space-between;
-
-                h1 {
-                    border-bottom: 5px #1F7BCC solid;
-                    padding-bottom: 5px;
-                }
-            }
-
-            .card {
-                img {
-                    max-height: 350px;
-                    height: 100%;
-                }
-
-                .overlay-content {
-                    background-color: rgba(0, 0, 0, 50%);
-                    bottom: 0;
-
-                    h5 {
-                        font-size: medium;
-                    }
-                }
-            }
+        .course-header {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding: 0 24px;
         }
 
-        .online-course {
-            background: linear-gradient(89.66deg, #FFFFFF -3.21%, rgba(217, 235, 254, 0.8) 16.97%, rgba(255, 218, 231, 0.8) 75.86%, #FFFFFF 106.62%),
-                radial-gradient(43.89% 43.89% at 50.03% 56.11%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
-
-
-            h1 {
-                margin-top: 100px;
-                font-size: 100px;
-            }
-
-            p {
-                max-width: 600px;
-            }
+        .course-header .title {
+            display: inline-block;
+            position: relative;
         }
 
-        .our-video {
-            background-color: #F7F7F7;
+        .course-header .title::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 100%;
+            height: 3px;
+            background-color: #0D6EFD;
+        }
 
-            .our-video-header {
-                display: flex;
-                justify-content: space-between;
+        .navbar-brand {
+            font-size: 14px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
 
-                h1 {
-                    border-bottom: 5px #1F7BCC solid;
-                    padding-bottom: 5px;
-                }
-            }
+        .navbar-brand img {
+            object-fit: cover;
+            border-radius: 50%;
+        }
 
-            .card {
-                background-color: white;
+        .card-img-wrapper {
+            position: relative;
+        }
 
-                .card-top {
-                    span {
-                        margin-top: 2%;
-                        margin-left: 2%;
-                    }
-                }
+        .rating-btn {
+            position: absolute;
+            top: 10px;
+            left: 30px;
 
-                span {
-                    color: black;
-                }
-            }
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            border-radius: 20px;
+            padding: 3px 10px;
+            font-size: 14px;
+            margin: 10px 10px;
+        }
+
+        .rating-btn i {
+            color: gold;
         }
 
         .card {
-            border: none;
+            border-radius: 20px;
         }
 
-        .our-questions {
-            h1 {
-                font-size: 50px;
-                border-bottom: 5px #1F7BCC solid;
-                padding-bottom: 5px;
-            }
+        .cardnews {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
 
-            .accordion {
-                max-width: 750px;
+        .cardnews img {
+
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: 0.3s;
+        }
+
+        .card-body {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 20px;
+            color: white;
+            background-color: rgba(3, 1, 13, 0.5);
+
+        }
+
+        .card-body h5 {
+            margin-left: 0 !important;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .card-body p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .card- small {
+            font-size: 13px;
+            opacity: 0.8;
+        }
+
+        .hero-box {
+            padding: 40px;
+            background: linear-gradient(89.66deg, #FFFFFF -3.21%, rgba(217, 235, 254, 0.8) 16.97%, rgba(255, 218, 231, 0.8) 75.86%, #FFFFFF 106.62%),
+                radial-gradient(43.89% 43.89% at 50.03% 56.11%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            box-shadow: none;
+            margin: 40px auto;
+        }
+
+        .btn-explore {
+            background-color: #1869E3 !important;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 100px;
+        }
+
+        p {
+            margin-top: 50px;
+            text-align: center;
+
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 50px;
+
+        }
+
+        .accordion {
+            width: 60%;
+            margin: auto;
+        }
+
+        .faq-title {
+            display: block;
+            width: fit-content;
+            margin: 50px auto 0;
+            position: relative;
+            text-align: center;
+        }
+
+        .faq-title::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 3px;
+            background-color: #0D6EFD;
+        }
+
+        .accordion-body p {
+            margin-top: 10px;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        @media (min-width: 1400px) {
+
+            .container {
+                max-width: 1400px;
+            }
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .hero-box {
+            padding: 30px 20px;
+        }
+
+        h1 {
+            font-size: clamp(32px, 6vw, 100px);
+        }
+
+        p {
+            font-size: clamp(14px, 2vw, 18px);
+            margin-top: 20px;
+        }
+
+        .menu-title {
+            font-size: clamp(28px, 5vw, 70px);
+            margin-left: 20px;
+        }
+
+        .menu-card {
+            width: 100%;
+            max-width: 170px;
+        }
+
+        @media (max-width: 992px) {
+
+            .container-menu .col-4,
+            .container-menu .col-8 {
                 width: 100%;
             }
+
+            .container-menu .col-8 {
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center !important;
+            }
+
+            .menu-card {
+                flex: 1 1 45%;
+            }
         }
 
-    }
-</style>
+        .logo {
+            width: clamp(120px, 25vw, 400px);
+            bottom: 10px;
+            right: 10px;
+        }
 
-<main class="home_page_style">
-    <div class="position-relative">
-        <img src="assets/images/e-learning-banner.png" alt="banner image" class="img-fluid">
-        <img src="assets/images/toyo-seikan-logo-long.jpg" alt="logo image"
-            class="img-fluid position-absolute bottom-0 end-0 logo-banner">
+        @media (max-width: 768px) {
+            .row-cols-md-3>* {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 992px) {
+
+            .col-8,
+            .col-4 {
+                width: 100%;
+            }
+
+            .cardnews img {
+                height: 200px;
+            }
+        }
+
+        video {
+            border-radius: 15px;
+        }
+
+        .accordion {
+            width: 90%;
+        }
+
+        .course-preview .course-header {
+            padding: 0 !important;
+        }
+
+        @media (max-width: 768px) {
+            .row.align-items-start>div {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            iframe {
+                width: 100%;
+                height: 250px;
+            }
+        }
+
+        footer p {
+            margin-top: 9px !important;
+            margin-bottom: 9px !important;
+        }
+    </style>
+
+    <div class="stepbanner">
+        <img class="w-100 banner-img" src="assets/images/banner.png" alt="">
+        <img class="logo" src="assets/images/logo2.jpg" alt="">
     </div>
 
-    <div class="container-fluid p-5 services-menu row text-md-start text-center">
-        <div class="col-md-3 col-12 ">
-            <h1 class="fs-1 menu-header">เมนู<br><span class="text-primary">ของเรา</span></h1>
-        </div>
 
-
-        <div class="col-md-2 col-12">
-            <div class="card course-menu">
-                <img src="assets/images/computer.png" alt="" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">หลักสูตรของฉัน</h5>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-2 col-12">
-            <div class="card document-menu">
-                <img src="assets/images/document-download.png" alt="" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">เอกสารดาวน์โหลด</h5>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-2 col-12">
-            <div class="card guild-menu">
-                <img src="assets/images/user-guild.png" alt="" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">วิธีการใช้งาน</h5>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-2 col-12">
-            <div class="card status-menu">
-                <img src="assets/images/check-list.png" alt="" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">สถานะการเรียน</h5>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="container-fluid our-course p-5">
-        <div class="w-100 our-course-header mb-4">
-            <div>
-                <h1>หลักสูตรของเรา</h1>
+    <main class="container-fluid ">
+        <div class="row align-items-center container-menu">
+            <div class="col-6">
+                <h2 class="menu-title">เมนู<br><span>ของเรา</span></h2>
             </div>
 
-            <div>
-                <a href="#" class="btn btn-dark">ดูทั้งหมด</a>
+            <div class="col-6 d-flex justify-content-between">
+
+                <div class="menu-card pink">
+                    <a href="course-main.php">
+                        <img src="assets/images/online-test.png">
+                        <p>หลักสูตรของฉัน</p>
+                    </a>
+                </div>
+
+                <!--  <div class="menu-card blue" onclick="window.location.href='download.php'">
+                    <img src="assets/images/attachment.png">
+                    <p>เอกสารดาวน์โหลด</p>
+                </div> -->
+
+                <div class="menu-card orange">
+                    <a href="guild.php">
+                        <img src="assets/images/user-guide.png">
+                        <p>วิธีการใช้งาน</p>
+                    </a>
+                </div>
+
+                <div class="menu-card green" onclick="window.location.href='Status.php'">
+                    <a href="course-main-2.php">
+                        <img src="assets/images/check-list.png">
+                        <p>สถานะการเรียน</p>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="row g-4">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card border-0 shadow">
-                    <div class="card-top position-relative mx-2 mt-2">
-                        <img src="assets/images/courses/course-1.png" alt="course" class="card-img-top">
-                        <span class="position-absolute start-0 top-0 bg-light px-2 rounded-pill">&#11088; 5.0</span>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title mb-3">
-                            Entrepreneurship & Business Growth Strategies Course
-                        </h5>
-                        <div class="container-fluid mb-3">
-                            <div class="d-flex justify-content-start gap-3">
-                                <span class="badge rounded-pill border border-secondary">
-                                    <img src="assets/images/open-book.png" alt=""> 47 lesson
-                                </span>
-                                <span class="badge rounded-pill border border-secondary">
-                                    <img src="assets/images/time.png" alt=""> 11h 30m
-                                </span>
-                                <span class="badge rounded-pill border border-secondary">
-                                    <img src="assets/images/student.png" alt=""> 432 students
-                                </span>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center gap-1 avatar">
-                            <img src="assets/images/users/user-1.png" alt="user image" class="rounded-circle">
-                            <h5>Sausage Rcode</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card border-0 shadow">
-                    <div class="card-top position-relative mx-2 mt-2">
-                        <img src="assets/images/courses/course-2.png" alt="course" class="card-img-top">
-                        <span class="position-absolute start-0 top-0 bg-light px-2 rounded-pill">&#11088; 5.0</span>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title mb-3">
-                            Entrepreneurship & Business Growth Strategies Course
-                        </h5>
-                        <div class="container-fluid mb-3">
-                            <div class="d-flex justify-content-start gap-3">
-                                <span class="badge rounded-pill border border-secondary">
-                                    <img src="assets/images/open-book.png" alt=""> 47 lesson
-                                </span>
-                                <span class="badge rounded-pill border border-secondary">
-                                    <img src="assets/images/time.png" alt=""> 11h 30m
-                                </span>
-                                <span class="badge rounded-pill border border-secondary">
-                                    <img src="assets/images/student.png" alt=""> 432 students
-                                </span>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center gap-1 avatar">
-                            <img src="assets/images/users/user-1.png" alt="user image" class="rounded-circle">
-                            <h5>Sausage Rcode</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card border-0 shadow">
-                    <div class="card-top position-relative mx-2 mt-2">
-                        <img src="assets/images/courses/course-3.png" alt="course" class="card-img-top">
-                        <span class="position-absolute start-0 top-0 bg-light px-2 rounded-pill">&#11088; 5.0</span>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title mb-3">
-                            Entrepreneurship & Business Growth Strategies Course
-                        </h5>
-                        <div class="container-fluid mb-3">
-                            <div class="d-flex justify-content-start gap-3">
-                                <span class="badge rounded-pill border border-secondary">
-                                    <img src="assets/images/open-book.png" alt=""> 47 lesson
-                                </span>
-                                <span class="badge rounded-pill border border-secondary">
-                                    <img src="assets/images/time.png" alt=""> 11h 30m
-                                </span>
-                                <span class="badge rounded-pill border border-secondary">
-                                    <img src="assets/images/student.png" alt=""> 432 students
-                                </span>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center gap-1 avatar">
-                            <img src="assets/images/users/user-1.png" alt="user image" class="rounded-circle">
-                            <h5>Sausage Rcode</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card border-0 shadow">
-                    <div class="card-top position-relative mx-2 mt-2">
-                        <img src="assets/images/courses/course-4.png" alt="course" class="card-img-top">
-                        <span class="position-absolute start-0 top-0 bg-light px-2 rounded-pill">&#11088; 5.0</span>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title mb-3">
-                            Entrepreneurship & Business Growth Strategies Course
-                        </h5>
-                        <div class="container-fluid mb-3">
-                            <div class="d-flex justify-content-start gap-3">
-                                <span class="badge rounded-pill border border-secondary">
-                                    <img src="assets/images/open-book.png" alt=""> 47 lesson
-                                </span>
-                                <span class="badge rounded-pill border border-secondary">
-                                    <img src="assets/images/time.png" alt=""> 11h 30m
-                                </span>
-                                <span class="badge rounded-pill border border-secondary">
-                                    <img src="assets/images/student.png" alt=""> 432 students
-                                </span>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center gap-1 avatar">
-                            <img src="assets/images/users/user-1.png" alt="user image" class="rounded-circle">
-                            <h5>Sausage Rcode</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card border-0 shadow">
-                    <div class="card-top position-relative mx-2 mt-2">
-                        <img src="assets/images/courses/course-5.png" alt="course" class="card-img-top">
-                        <span class="position-absolute start-0 top-0 bg-light px-2 rounded-pill">&#11088; 5.0</span>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title mb-3">
-                            Entrepreneurship & Business Growth Strategies Course
-                        </h5>
-                        <div class="container-fluid mb-3">
-                            <div class="d-flex justify-content-start gap-3">
-                                <span class="badge rounded-pill border border-secondary">
-                                    <img src="assets/images/open-book.png" alt=""> 47 lesson
-                                </span>
-                                <span class="badge rounded-pill border border-secondary">
-                                    <img src="assets/images/time.png" alt=""> 11h 30m
-                                </span>
-                                <span class="badge rounded-pill border border-secondary">
-                                    <img src="assets/images/student.png" alt=""> 432 students
-                                </span>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center gap-1 avatar">
-                            <img src="assets/images/users/user-1.png" alt="user image" class="rounded-circle">
-                            <h5>Sausage Rcode</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card border-0 shadow">
-                    <div class="card-top position-relative mx-2 mt-2">
-                        <img src="assets/images/courses/course-6.png" alt="course" class="card-img-top">
-                        <span class="position-absolute start-0 top-0 bg-light px-2 rounded-pill">&#11088; 5.0</span>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title mb-3">
-                            Entrepreneurship & Business Growth Strategies Course
-                        </h5>
-                        <div class="container-fluid mb-3">
-                            <div class="d-flex justify-content-start gap-3">
-                                <span class="badge rounded-pill border border-secondary">
-                                    <img src="assets/images/open-book.png" alt=""> 47 lesson
-                                </span>
-                                <span class="badge rounded-pill border border-secondary">
-                                    <img src="assets/images/time.png" alt=""> 11h 30m
-                                </span>
-                                <span class="badge rounded-pill border border-secondary">
-                                    <img src="assets/images/student.png" alt=""> 432 students
-                                </span>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center gap-1 avatar">
-                            <img src="assets/images/users/user-1.png" alt="user image" class="rounded-circle">
-                            <h5>Sausage Rcode</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-    </div>
-
-    <div class="container-fluid our-announcement p-5">
-        <div class="w-100 our-announcement-header mb-4">
-            <div>
-                <h1>ข่าวประชาสัมพันธ์</h1>
+        <div class="course-container course-preview">
+            <div class="d-flex align-items-center justify-content-between course-header">
+                <h2 class="mb-0 title">หลักสูตรของเรา</h2>
+                <button type="button" class="btn btn-dark rounded-pill px-4 py-2">
+                    <a class="text-white" href="course-main.php">
+                        ดูทั้งหมด
+                    </a>
+                </button>
             </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <a href="course-main.php">
+                        <div class="card">
+                            <div class="card-img-wrapper">
+                                <img src="assets/images/Graph.png" class="card-img-top" alt="...">
 
-            <div>
-                <a href="#" class="btn btn-dark">ดูทั้งหมด</a>
-            </div>
-        </div>
-        <div class="row g-4">
-            <div class="col-lg-8 col-md-6 col-sm-12">
-                <div class="card position-relative h-100 w-100">
-                    <img src="assets/images/announcements/am-1.png" alt="announcement image" class="card-img">
-                    <div class="card-img-overlay text-light p-0">
-                        <div class="overlay-content container-fluid position-absolute bottom-0">
-                            <h5 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Molestias
-                                autem
-                                neque impedit? Rem sequi hic necessitatibus quaerat odit?</h5>
-                            <div>
-                                <p class="mb-0"><img src="assets/images/calender.png" alt=""> 10 เมษายน 2564</p>
-                                <p>Lorem ipsum dolor sit amet.</p>
                             </div>
 
+                            <div class="card-body-coure">
+                                <h5 class="card-title">Entrepreneurship & Business & Growth Strategies Course</h5>
+                                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+
+                                    <div class="btn-group" role="group" aria-label="Two group">
+                                        <button type="button" class="btn btn-outline-secondary" style="border-radius: 50px; margin:5px 0 0 8px;"> <img src="assets/images/circle.png"> 11h 30m</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a class="navbar-brand d-flex align-items-center mt-2" href="#">
+                                <img src="assets/images/Ellipse.png" alt="Logo" width="30" height="30" class="me-2">
+                                <span>Sausage Rcode</span>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/keyboard.png" class="card-img-top" alt="...">
+
+
+                        </div>
+
+                        <div class="card-body-course">
+                            <h5 class="card-title">Entrepreneurship & Business & Growth Strategies Course</h5>
+                            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+
+                                <div class="btn-group" role="group" aria-label="Two group">
+                                    <button type="button" class="btn btn-outline-secondary" style="border-radius: 50px; margin:5px 0 0 8px;"> <img src="assets/images/circle.png"> 11h 30m</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <a class="navbar-brand d-flex align-items-center mt-2" href="#">
+                            <img src="assets/images/Ellipse.png" alt="Logo" width="30" height="30" class="me-2">
+                            <span>Sausage Rcode</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/meet.png" class="card-img-top" alt="...">
+
+
+                        </div>
+
+                        <div class="card-body-course">
+                            <h5 class="card-title">Entrepreneurship & Business & Growth Strategies Course</h5>
+                            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+
+                                <div class="btn-group" role="group" aria-label="Two group">
+                                    <button type="button" class="btn btn-outline-secondary" style="border-radius: 50px; margin:5px 0 0 8px;"> <img src="assets/images/circle.png"> 11h 30m</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <a class="navbar-brand d-flex align-items-center mt-2" href="#">
+                            <img src="assets/images/Ellipse.png" alt="Logo" width="30" height="30" class="me-2">
+                            <span>Sausage Rcode</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/board.png" class="card-img-top" alt="...">
+
+
+                        </div>
+
+                        <div class="card-body-course">
+                            <h5 class="card-title">Entrepreneurship & Business & Growth Strategies Course</h5>
+                            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+
+                                <div class="btn-group" role="group" aria-label="Two group">
+                                    <button type="button" class="btn btn-outline-secondary" style="border-radius: 50px; margin:5px 0 0 8px;"> <img src="assets/images/circle.png"> 11h 30m</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <a class="navbar-brand d-flex align-items-center mt-2" href="#">
+                            <img src="assets/images/Ellipse.png" alt="Logo" width="30" height="30" class="me-2">
+                            <span>Sausage Rcode</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/screen.png" class="card-img-top" alt="...">
+
+                            <!--  <button type="button" class="btn btn-light rating-btn">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5.0</span>
+                            </button> -->
+                        </div>
+
+                        <div class="card-body-course">
+                            <h5 class="card-title">Entrepreneurship & Business & Growth Strategies Course</h5>
+                            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+
+                                <div class="btn-group" role="group" aria-label="Two group">
+                                    <button type="button" class="btn btn-outline-secondary" style="border-radius: 50px; margin:5px 0 0 8px;"> <img src="assets/images/circle.png"> 11h 30m</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <a class="navbar-brand d-flex align-items-center mt-2" href="#">
+                            <img src="assets/images/Ellipse.png" alt="Logo" width="30" height="30" class="me-2">
+                            <span>Sausage Rcode</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/notebook.png" class="card-img-top" alt="...">
+
+                            <button type="button" class="btn btn-light rating-btn">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5.0</span>
+                            </button>
+                        </div>
+
+                        <div class="card-body-course">
+                            <h5 class="card-title">Entrepreneurship & Business & Growth Strategies Course</h5>
+                            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+
+                                <div class="btn-group" role="group" aria-label="Two group">
+                                    <button type="button" class="btn btn-outline-secondary" style="border-radius: 50px; margin:5px 0 0 8px;"> <img src="assets/images/circle.png"> 11h 30m</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <a class="navbar-brand d-flex align-items-center mt-2" href="#">
+                            <img src="assets/images/Ellipse.png" alt="Logo" width="30" height="30" class="me-2">
+                            <span>Sausage Rcode</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-between course-header">
+            <h2 class="mb-0 title">ข่าวประชาสัมพันธ์</h2>
+            <button type="button" class="btn btn-dark rounded-pill px-4 py-2">
+                <a class="text-white" href="announcement.php">
+                    ดูทั้งหมด
+                </a>
+            </button>
+
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <div class="cardnews">
+                        <a href="announcement-detail.php">
+                            <img src="https://cdn.pixabay.com/photo/2026/03/03/10/12/tylijura-car-10153221_1280.jpg">
+                            <div class="card-body">
+                                <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                <small><i class="bi bi-calendar4"></i> 10 เมษายน 2564</small><br>
+                                <small>Name What is Lorem Ipsum</small>
+                                <!--<p class=" card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="cardnews">
+                        <img src="https://cdn.pixabay.com/photo/2026/03/03/10/12/tylijura-car-10153221_1280.jpg">
+                        <div class="card-body">
+                            <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                            <small><i class="bi bi-calendar4"></i> 10 เมษายน 2564</small><br>
+                            <small>Name What is Lorem Ipsum</small>
+                            <!--<p class=" card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card position-relative h-100 w-100">
-                    <img src="assets/images/announcements/am-2.png" alt="announcement image" class="card-img">
-                    <div class="card-img-overlay text-light p-0">
-                        <div class="overlay-content container-fluid position-absolute bottom-0">
-                            <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                            <div>
-                                <p class="mb-0"><img src="assets/images/calender.png" alt=""> 10 เมษายน 2564</p>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
 
+            <div class="row">
+                <div class="col-4">
+                    <div class="cardnews">
+                        <img src="https://cdn.pixabay.com/photo/2026/03/03/10/12/tylijura-car-10153221_1280.jpg">
+                        <div class="card-body">
+                            <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                            <small><i class="bi bi-calendar4"></i> 10 เมษายน 2564</small><br>
+                            <small>Name What is Lorem Ipsum</small>
+                            <!--<p class=" card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card position-relative h-100 w-100">
-                    <img src="assets/images/announcements/am-3.png" alt="announcement image" class="card-img">
-                    <div class="card-img-overlay text-light p-0">
-                        <div class="overlay-content container-fluid position-absolute bottom-0">
-                            <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                            <div>
-                                <p class="mb-0"><img src="assets/images/calender.png" alt=""> 10 เมษายน 2564</p>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-
+                <div class="col-4">
+                    <div class="cardnews">
+                        <img src="https://cdn.pixabay.com/photo/2026/03/03/10/12/tylijura-car-10153221_1280.jpg">
+                        <div class="card-body">
+                            <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                            <small><i class="bi bi-calendar4"></i> 10 เมษายน 2564</small><br>
+                            <small>Name What is Lorem Ipsum</small>
+                            <!--<p class=" card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card position-relative h-100 w-100">
-                    <img src="assets/images/announcements/am-4.png" alt="announcement image" class="card-img">
-                    <div class="card-img-overlay text-light p-0">
-                        <div class="overlay-content container-fluid position-absolute bottom-0">
-                            <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                            <div>
-                                <p class="mb-0"><img src="assets/images/calender.png" alt=""> 10 เมษายน 2564</p>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card position-relative h-100 w-100">
-                    <img src="assets/images/announcements/am-5.jpg" alt="announcement image" class="card-img">
-                    <div class="card-img-overlay text-light p-0">
-                        <div class="overlay-content container-fluid position-absolute bottom-0">
-                            <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                            <div>
-                                <p class="mb-0"><img src="assets/images/calender.png" alt=""> 10 เมษายน 2564</p>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-
+                <div class="col-4">
+                    <div class="cardnews">
+                        <img src="https://cdn.pixabay.com/photo/2026/03/03/10/12/tylijura-car-10153221_1280.jpg">
+                        <div class="card-body">
+                            <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                            <small><i class="bi bi-calendar4"></i> 10 เมษายน 2564</small><br>
+                            <small>Name What is Lorem Ipsum</small>
+                            <!--<p class=" card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="online-course d-flex flex-column justify-content-center align-items-center text-center p-5">
-        <h1>Learn and Grow with<br>Top <span class="text-primary">Online Course</span></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos numquam nihil vero rem impedit
-            fugit dolor iure
-            consequuntur ea accusantium minima aliquam saepe, recusandae esse veritatis voluptatibus eveniet ab animi?
-        </p>
-        <div>
-            <a href="#" class="btn btn-primary rounded-pill">Explore Courses</a>
-            <a href="#" class="btn btn-outline-secondary rounded-pill">Contact Us</a>
-        </div>
-    </div>
-
-    <div class="container-fluid our-video p-5">
-        <div class="w-100 our-video-header mb-4">
-            <div>
-                <h1>วิดีโอแนะนำ</h1>
-            </div>
-
-            <div>
-                <a href="#" class="btn btn-dark">ดูทั้งหมด</a>
-            </div>
-        </div>
-        <div class="row g-4">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video"
-                        allowfullscreen></iframe>
+        <div class="hero-box">
+            <div class="container">
+                <h1>
+                    Learn and Grow with <br>
+                    Top <span>Online Courses</span>
+                </h1>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    <br>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                </p>
+                <div class="buttons">
+                    <!-- <button class="btn btn-primary btn-explore">Explore Courses</button> -->
+                    <button class="btn btn-outline-dark" style="border-radius: 50px;"
+                        onclick="window.location.href='Contact.php'">Contact Us</button>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="d-flex align-items-center justify-content-between course-header">
+            <h2 class="mb-0 title">วิดีโอแนะนำ</h2>
+            <button type="button" class="btn btn-dark rounded-pill px-4 py-2">
+                <a class="text-white" href="Video.php">
+                    ดูทั้งหมด
+                </a>
+            </button>
+        </div>
+        <div class="d-flex align-items-center justify-content-between course-header">
 
-    <div class="our-questions container-fluid d-flex flex-column justify-content-center align-items-center gap-3">
-        <h1>คำถามที่ผมบ่อย</h1>
-        <div class="accordion d-grid gap-3" id="questionAccordion">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#question1">
-                        1. การเรียน/สอบ ผ่านระบบ E-Learning
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <video id="modalVideo1" width="100%" controls autoplay>
+                            <source src="https://cdn.pixabay.com/video/2025/05/06/277042_large.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <video id="modalVideo1" width="100%" controls autoplay>
+                            <source src="https://cdn.pixabay.com/video/2025/05/06/277042_large.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <video id="modalVideo1" width="100%" controls autoplay>
+                            <source src="https://cdn.pixabay.com/video/2025/05/06/277042_large.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="accordion" id="accordionExample">
+            <h3 class="faq-title" style="font-size:50px; margin-top:50px;">
+                คำถามที่พบบ่อย
+            </h3>
+            <div class="accordion-item mt-4">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        1.การเรียน/สอบ ผ่านระบบ E-Learning
                     </button>
                 </h2>
-                <div id="question1" class="accordion-collapse collapse show" data-bs-parent="#questionAccordion">
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, ullam, molestias cumque
-                        nihil facilis incidunt sequi labore vitae nesciunt sed tenetur vel facere eligendi dolorem
-                        quibusdam modi similique corporis voluptas.
+                        <p>1. "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat distinctio beatae, eligendi earum laboriosam dicta quam quod neque praesentium sequi quibusdam minus? Culpa ex velit commodi possimus quaerat tempora eveniet nostrum, non quos facilis quidem ut voluptate nam expedita nobis quae, et excepturi autem ea laudantium dolore, consequatur pariatur! Nulla!"</p>
+                        <p>2. "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat distinctio beatae, eligendi earum laboriosam dicta quam quod neque praesentium sequi quibusdam minus? Culpa ex velit commodi possimus quaerat tempora eveniet nostrum, non quos facilis quidem ut voluptate nam expedita nobis quae, et excepturi autem ea laudantium dolore, consequatur pariatur! Nulla!"</p>
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#question2">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         2. ลืมรหัสผ่าน
                     </button>
                 </h2>
-                <div id="question2" class="accordion-collapse collapse" data-bs-parent="#questionAccordion">
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, quidem! Error perspiciatis
-                        eius natus, corporis saepe amet incidunt fuga voluptate ex? Dolores quidem, rem iure quae
-                        aperiam facilis perspiciatis accusantium!
+                        <p>1. "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat distinctio beatae, eligendi earum laboriosam dicta quam quod neque praesentium sequi quibusdam minus? Culpa ex velit commodi possimus quaerat tempora eveniet nostrum, non quos facilis quidem ut voluptate nam expedita nobis quae, et excepturi autem ea laudantium dolore, consequatur pariatur! Nulla!"</p>
+                        <p>2. "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat distinctio beatae, eligendi earum laboriosam dicta quam quod neque praesentium sequi quibusdam minus? Culpa ex velit commodi possimus quaerat tempora eveniet nostrum, non quos facilis quidem ut voluptate nam expedita nobis quae, et excepturi autem ea laudantium dolore, consequatur pariatur! Nulla!"</p>
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#question3">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         3. วิธีแจ้งปัญหาการใช้งาน
                     </button>
                 </h2>
-                <div id="question3" class="accordion-collapse collapse" data-bs-parent="#questionAccordion">
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, quidem! Error perspiciatis
-                        eius natus, corporis saepe amet incidunt fuga voluptate ex? Dolores quidem, rem iure quae
-                        aperiam facilis perspiciatis accusantium!
+                        <p>1. "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat distinctio beatae, eligendi earum laboriosam dicta quam quod neque praesentium sequi quibusdam minus? Culpa ex velit commodi possimus quaerat tempora eveniet nostrum, non quos facilis quidem ut voluptate nam expedita nobis quae, et excepturi autem ea laudantium dolore, consequatur pariatur! Nulla!"</p>
+                        <p>2. "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat distinctio beatae, eligendi earum laboriosam dicta quam quod neque praesentium sequi quibusdam minus? Culpa ex velit commodi possimus quaerat tempora eveniet nostrum, non quos facilis quidem ut voluptate nam expedita nobis quae, et excepturi autem ea laudantium dolore, consequatur pariatur! Nulla!"</p>
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#question4">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                         4. สามารถใช้งานภาษาอะไรได้บ้าง
                     </button>
                 </h2>
-                <div id="question4" class="accordion-collapse collapse" data-bs-parent="#questionAccordion">
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, quidem! Error perspiciatis
-                        eius natus, corporis saepe amet incidunt fuga voluptate ex? Dolores quidem, rem iure quae
-                        aperiam facilis perspiciatis accusantium!
+                        <p>1. "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat distinctio beatae, eligendi earum laboriosam dicta quam quod neque praesentium sequi quibusdam minus? Culpa ex velit commodi possimus quaerat tempora eveniet nostrum, non quos facilis quidem ut voluptate nam expedita nobis quae, et excepturi autem ea laudantium dolore, consequatur pariatur! Nulla!"</p>
+                        <p>2. "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat distinctio beatae, eligendi earum laboriosam dicta quam quod neque praesentium sequi quibusdam minus? Culpa ex velit commodi possimus quaerat tempora eveniet nostrum, non quos facilis quidem ut voluptate nam expedita nobis quae, et excepturi autem ea laudantium dolore, consequatur pariatur! Nulla!"</p>
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#question5">
-                        5. วิธีการเรียนตาม Road map
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        5. วิธีการเรียนตาม Poad map
                     </button>
                 </h2>
-                <div id="question5" class="accordion-collapse collapse" data-bs-parent="#questionAccordion">
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, quidem! Error perspiciatis
-                        eius natus, corporis saepe amet incidunt fuga voluptate ex? Dolores quidem, rem iure quae
-                        aperiam facilis perspiciatis accusantium!
+                        <p>1. "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat distinctio beatae, eligendi earum laboriosam dicta quam quod neque praesentium sequi quibusdam minus? Culpa ex velit commodi possimus quaerat tempora eveniet nostrum, non quos facilis quidem ut voluptate nam expedita nobis quae, et excepturi autem ea laudantium dolore, consequatur pariatur! Nulla!"</p>
+                        <p>2. "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat distinctio beatae, eligendi earum laboriosam dicta quam quod neque praesentium sequi quibusdam minus? Culpa ex velit commodi possimus quaerat tempora eveniet nostrum, non quos facilis quidem ut voluptate nam expedita nobis quae, et excepturi autem ea laudantium dolore, consequatur pariatur! Nulla!"</p>
                     </div>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn btn-dark rounded-pill px-4">ดูทั้งหมด</a>
-    </div>
+        <div class="text-center mt-4">
+            <button type="button" class="btn btn-dark rounded-pill px-4 py-2"
+                onclick="window.location.href='question.php'">
+                ดูทั้งหมด
+            </button>
+        </div>
 
-    <div class="our-contact p-5 container-fluid">
-        <img src="assets/images/toyo-seikan-logo-long.jpg" alt="logo" class="img-fluid w-25">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-12">
-                <div class="d-flex flex-column">
-                    <a href="" class="link-dark link-underline-opacity-0">หน้าแรก</a>
-                    <a href="" class="link-secondary link-underline-opacity-0">เกี่ยวกับเรา</a>
-                    <a href="" class="link-secondary link-underline-opacity-0">ผลิตภัณท์ของเรา</a>
-                    <a href="" class="link-secondary link-underline-opacity-0">รายงานกับเรา</a>
-                    <a href="" class="link-secondary link-underline-opacity-0">ติดต่อเรา</a>
+        <div class="container">
+            <div class="row align-items-start" style="margin-top: 50px;">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="assets/images/logo2.jpg" style="width:500px;" class="me-2">
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12">
-                <h5>สำนักงานใหญ่</h5>
-                <p>
-                    95 หมู่ 3, สวนอุตสาหกรรมโรจนะ 2, ตำบล บ้านช้าง, อำเภอ อุทัย, จังหวัด พระนครศรีอยุธยา. 13210
-                    ประเทศไทย
-                </p>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12">
-                <p>
-                    Tel: +66-35-746-655
-                </p>
-                <p>Email: info@toyoseikan.co.th</p>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989644.6361800907!2d100.6733931!3d14.323084099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d8966aaaaaaab%3A0x84604855c1631415!2zVG95byBTZWlrYW4oVGhhaWxhbmQpIENvLixMdGQuICjguJrguKPguLTguKnguLHguJcg4LmC4LiV4LmC4LiiIOC5hOC4i-C4geC4seC4mSAo4Lib4Lij4Liw4LmA4LiX4Lio4LmE4LiX4LiiKSDguIjguLPguIHguLHguJQp!5e0!3m2!1sen!2sth!4v1776323968470!5m2!1sen!2sth"
-                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                    class="ratio ratio-4x3"></iframe>
+                <div class="col-md-3">
+                    <ul class="list-unstyled text-muted">
+                        <li><strong>หน้าแรก</strong></li>
+                        <li>เกี่ยวกับเรา</li>
+                        <li>ร่วมงานกับเรา</li>
+                        <li>ติดต่อเรา</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <ul class="list-unstyled text-muted">
+                        <li><strong>สำนักงานใหญ่</strong></li>
+                        <br>
+                        <li>95 หมู่ 3, สวนอุตสาหกรรมโรจนะ 2,</li>
+                        <li>ตำบล บ้านช้าง, อำเภอ อุทัย,</li>
+                        <li>จังหวัด พระนครศรีอยุธยา. 13210 ประเทศไทย</li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-3">
+                    <ul class="list-unstyled text-muted">
+                        <br>
+                        <li>Tel: +66-35-746-655</li>
+                        <li>Email: info@toyoseikan.co.th</li>
+                        <br>
+                        <i class="bi bi-line"></i> <i class="bi bi-facebook"> </i><i class="bi bi-twitter"></i> <i class="bi bi-instagram"></i>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.3392943677554!2d100.67093657434177!3d14.323083783812365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d8966aaaaaaab%3A0x84604855c1631415!2zVG95byBTZWlrYW4oVGhhaWxhbmQpIENvLixMdGQuICjguJrguKPguLTguKnguLHguJcg4LmC4LiV4LmC4LiiIOC5hOC4i-C4geC4seC4mSAo4Lib4Lij4Liw4LmA4LiX4Lio4LmE4LiX4LiiKSDguIjguLPguIHguLHguJQp!5e1!3m2!1sth!2sth!4v1775620405093!5m2!1sth!2sth" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
             </div>
         </div>
-    </div>
-</main>
+    </main>
 
-<?php $footer = true;
-include "includes/footer.php" ?>
+    <?php include 'includes/footer.php'; ?>

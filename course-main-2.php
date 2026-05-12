@@ -128,7 +128,7 @@
                     <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
                         aria-orientation="vertical">
                         <div class="road">
-                            <button class="nav-link active " id="v-pills-home-tab" data-bs-toggle="pill"
+                            <button class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill"
                                 data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
                                 aria-selected="true">
                                 <p class="number">01</p>
@@ -158,8 +158,8 @@
                                         <p>ให้การสนับสนุนทางเทคนิคด้านนวัตกรรมเครื่องดื่มและบรรจุภัณฑ์ </p>
                                     </div>
 
-                                    <div class="icon">
-                                        <i class="fa-regular fa-pen-to-square"></i>
+                                   <div class="icon">
+                                        <svg class="svg-inline--fa fa-circle-check" data-prefix="far" data-icon="circle-check" role="img" viewBox="0 0 512 512" aria-hidden="true" data-fa-i2svg=""><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zm0-464a208 208 0 1 0 0 416 208 208 0 1 0 0-416zm70.7 121.9c7.8-10.7 22.8-13.1 33.5-5.3 10.7 7.8 13.1 22.8 5.3 33.5L243.4 366.1c-4.1 5.7-10.5 9.3-17.5 9.8-7 .5-13.9-2-18.8-6.9l-55.9-55.9c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l36 36 105.6-145.2z"></path></svg><!-- <i class="fa-regular fa-circle-check"></i> Font Awesome fontawesome.com -->
                                     </div>
                                 </div>
                             </button>
@@ -178,7 +178,7 @@
                                     </div>
 
                                     <div class="icon">
-                                        <i class="fa-regular fa-pen-to-square"></i>
+                                        <svg class="svg-inline--fa fa-circle-check" data-prefix="far" data-icon="circle-check" role="img" viewBox="0 0 512 512" aria-hidden="true" data-fa-i2svg=""><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zm0-464a208 208 0 1 0 0 416 208 208 0 1 0 0-416zm70.7 121.9c7.8-10.7 22.8-13.1 33.5-5.3 10.7 7.8 13.1 22.8 5.3 33.5L243.4 366.1c-4.1 5.7-10.5 9.3-17.5 9.8-7 .5-13.9-2-18.8-6.9l-55.9-55.9c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l36 36 105.6-145.2z"></path></svg><!-- <i class="fa-regular fa-circle-check"></i> Font Awesome fontawesome.com -->
                                     </div>
                                 </div>
                             </button>
@@ -195,15 +195,15 @@
                                         <p>การอบรม การผลิต บรรจุภัณฑ์พลาสติก Common200 (Lamicon) </p>
                                     </div>
 
-                                    <div class="icon">
-                                        <i class="fa-regular fa-pen-to-square"></i>
+                                   <div class="icon">
+                                        <svg class="svg-inline--fa fa-circle-check" data-prefix="far" data-icon="circle-check" role="img" viewBox="0 0 512 512" aria-hidden="true" data-fa-i2svg=""><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zm0-464a208 208 0 1 0 0 416 208 208 0 1 0 0-416zm70.7 121.9c7.8-10.7 22.8-13.1 33.5-5.3 10.7 7.8 13.1 22.8 5.3 33.5L243.4 366.1c-4.1 5.7-10.5 9.3-17.5 9.8-7 .5-13.9-2-18.8-6.9l-55.9-55.9c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l36 36 105.6-145.2z"></path></svg><!-- <i class="fa-regular fa-circle-check"></i> Font Awesome fontawesome.com -->
                                     </div>
                                 </div>
                             </button>
                         </div>
 
                         <div class="road">
-                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                            <button class="nav-link active " id="v-pills-messages-tab" data-bs-toggle="pill"
                                 data-bs-target="#v-pills-messages5" type="button" role="tab"
                                 aria-controls="v-pills-messages" aria-selected="false">
                                 <p class="number">05</p>
@@ -253,8 +253,8 @@
                                 <img class="w-100" src="assets/images/course1.png" alt="" srcset="">
                                 <div class="card-body">
                                     <h3>การผลิต บรรจุภัณฑ์พลาสติก ผลิตภัณฑ์เครื่องดื่ม การวิจัยและพัฒนา</h3>
-                                    <progress class="progressbar-inp" value="100" max="100"> 100% </progress>
-                                    <h5 class="card-title">100 % สำเร็จ</h5>
+                                   <progress class="progressbar-inp" value="50" max="100"> 70% </progress>
+                                    <h5 class="card-title">50 % สำเร็จ</h5>
                                     <div class="admin-course">
 
                                         <table>

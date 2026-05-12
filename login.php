@@ -28,10 +28,20 @@
 
             .input-group-text {
                 background-color: white;
+                width: 12%;
             }
 
             .form-control {
                 border-left: none !important;
+            }
+
+            .input-group {
+                display: flex;
+                width: 100%;
+
+                .form-floating {
+                    width: 88%;
+                }
             }
 
         }
@@ -62,7 +72,9 @@
                     <div class="text-end mb-4">
                         <a href="" class="link link-secondary link-underline-opacity-0">ลืมรหัสผ่าน?</a>
                     </div>
-                    <button type="submit" class="btn btn-primary container-fluid">เข้าสู่ระบบ</button>
+                    <a href="index.php"  class="btn btn-primary container-fluid">เข้าสู่ระบบ</a>
+                         
+                    
 
                 </form>
                 <div class="d-flex align-items-center my-4">

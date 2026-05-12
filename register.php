@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toyo Seikan</title>
+    <link rel="stylesheet" href="assets\bootstrap-5.0.2\css\bootstrap.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/fontawesome.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Toyo Seikan</title>
     <style>
         .register_page_style {
             body {
